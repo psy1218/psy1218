@@ -5,6 +5,29 @@
 
 ---
 
+🔹 Activities & Leadership
+
+- 2024 INU 정보기술대 제1회 해커톤 주관 (96명 참여, 12팀, 12멘토, 10심사위원)
+
+- 2024 정보기술대학 학생회 부회장 (학술/대외행사 주관)
+- 2023 정보기술대학 학생회 운영국장
+
+- 소프트웨어 공모전, 연구체험, 창업동아리, 캡스톤 디자인, SK AI DATA ACADEMY 중급 수료, 코딩봉사 등 다수 프로젝트 참여
+
+<br>
+
+🔹 Skills
+
+- Languages: C, C++, Python, MATLAB, SQLite
+
+- Embedded: Arduino, ESP32, Raspberry Pi 5, IMX500
+
+- AI/ML: TensorFlow Lite, PyTorch, YOLOv5/v8, openSMILE
+
+- Web: React, Flask, SQLite, REST API, JWT
+
+- Tools: Git, WSL, VS Code, Simulink, NX MCD
+
 <br>
 
 ---
