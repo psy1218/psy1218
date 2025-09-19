@@ -93,6 +93,20 @@
 # 📑 Summary of Activities
 
 ### 🔹 Embedded / AI Projects
+
+- [🚙 자율주행 시뮬레이션( 2025.09 ~ )](https://github.com/jjong102/Third_Impact)
+  <details>
+    <summary>👉MATLAB/Simulink 기반 자율주행 시뮬레이션</summary>
+  
+  - **역할:** 시스템 설계 및 시뮬레이션 구현  
+  - **내용:**  
+    - RoadRunner + Simulink를 활용해 자율주행 차량의 차선 유지, 차선 변경, 장애물 회피, Cut-in 대응 시나리오를 시뮬레이션  
+    - Vision Sensor, Radar, LiDAR 등 가상 센서를 구성하고, PID 제어 및 경로 Planner 로직을 설계  
+    - 다양한 주행 환경(직선, 곡선, 장애물, 돌발 상황)에서 인식 및 제어 성능 검증  
+  - **기술:** MATLAB, Simulink, RoadRunner, Automated Driving Toolbox, Navigation Toolbox  
+  
+  </details>
+
 - [🚗 **Is Not Break Down(2025.07 ~ 2025.09)**](https://github.com/brake-down)  
   <details>
     <summary>👉멀티모달 AI 시스템 (영상·음성·OBD-II) → 실시간 경고 & 운전자 안전성 확보</summary>
