@@ -69,6 +69,24 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
 
+---
+
+<br>
+
+### 📊 GitHub Stats
+<div align="left">
+
+<img src="https://github-readme-stats.vercel.app/api?username=psy1218&show_icons=true&theme=radical" height="180em"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psy1218&layout=compact&theme=radical&hide=jupyter%20notebook" height="180em"/>
+
+</div>
+
+
+### 📊 BOJ Stats
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=asz1218)](https://solved.ac/profile/psy1218)
+
+
+
 <br>
 
 ---
@@ -342,17 +360,6 @@
 - [RUN 기록 관리 web](https://github.com/sjlee0303/DB_project_2024)
 - [빈칸만남 web](https://github.com/Gap-Meet)
 ---
-
-### 📊 GitHub Stats
-
-![Soyun's GitHub stats](https://github-readme-stats.vercel.app/api?username=psy1218&show_icons=true&theme=radical)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=psy1218&layout=compact&theme=radical&hide=jupyter%20notebook)
-
-### 📊 BOJ Stats
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=asz1218)](https://solved.ac/profile/psy1218)
-
-
 
 
 <!--
