@@ -93,43 +93,42 @@
 # 📑 Summary of Activities
 
 ### 🔹 Embedded / AI Projects
-- 🚗 **Pedal Misoperation Detection System (2025.07 ~ 2025.09)**  
-  멀티모달 AI 시스템 (영상·음성·OBD-II) → 실시간 경고 & 운전자 안전성 확보  
+- [🚗 ** Is Not Break Down(2025.07 ~ 2025.09)**](https://github.com/brake-down)  
+  멀티모달 AI 시스템 (영상·음성·OBD-II) → 실시간 경고 & 운전자 안전성 확보
+    
 
-- 🐝 **양봉 프로젝트 (WCL-INU 연구실) (2025.03 ~ )**  
+- 🐝 [**양봉 프로젝트 (WCL-INU 연구실) (2025.03 ~ )**](https://github.com/WCL-INU/BEE_COUNT_YOLO5)
   YOLOv5/v8 기반 벌 탐지/계수 모델 → 커스텀 데이터셋 제작 및 학습 파이프라인 구축  
 
-- 🚙 **RC카 기반 프로젝트 (2025.05 ~ 2025.06)**  
+- 🚙 [**RC카 기반 프로젝트 (2025.05 ~ 2025.06)**](https://github.com/psy1218/RC_Car)
   Flask 스트리밍 + PID 제어 + RC 신호 수신 → 자율주행 & 수동 전환  
 
-- 🦽 **핸들 압력 패턴 기반 반자율주행 보행기 – 캡스톤 디자인 & 창업지원단 동아리 (2024.09 ~ 2025.05)**  
+- [🦽 **핸들 압력 패턴 기반 반자율주행 보행기 (2024.09 ~ 2025.05)**](https://github.com/Capstone-A-Sharp)  
   FSR 압력센서 + 자이로센서 + 모터 제어 → 반자율주행 보행기 / **우수상 수상, 논문 2편 발표**  
 
-- 🈶 **한글 문자 인식 인공신경망 (2024.10 ~ 2024.12)**  
+- [🈶 **한글 문자 인식 인공신경망 (2024.10 ~ 2024.12)**](https://github.com/psy1218/Korean_Character_Recognition)
   115클래스 한글 데이터셋 생성 + Forward/Backprop 직접 구현 → AI pipeline 경험  
 
-- 📡 **METLAB 연구 체험 프로그램 대회 (2024.07 ~ 2024.09)**   
+- [📡 **METLAB 연구 체험 프로그램 대회 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
   연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 악천후 인식 정확도 개선 / **총장상 수상**  
 
-- ⚙️ **STM32 실시간 제어 프로젝트 (2024.05 ~ 2024.06)**  
+- [⚙️ **STM32 실시간 제어 프로젝트 (2024.05 ~ 2024.06)**](https://github.com/psy1218/Embedded_SW_project)  
   적외선 센서·서보모터·7-Segment를 로우레벨 레지스터로 제어 포함한 실시간 반응형 제어 시스템
 
-- 🎮 **객체지향 SW 프로젝트 (2023.10 ~ 2023.12)**  
+- [🎮 **객체지향 SW 프로젝트 (2023.10 ~ 2023.12)**](https://github.com/psy1218/Object-Oriented-Projects)  
   C++ 기반으로 벽치기 게임과 A* Pathfinding 시각화를 구현, 실시간 이벤트 처리 및 알고리즘
 
-
-
-- 📚 **스마트 독서대 – INU Maker 경진대 (Maker Fair, 2022.09~11)**  
+- [📚 **스마트 독서대 – INU Maker 경진대 (Maker Fair, 2022.09~11)**](https://github.com/psy1218/Smart_Bookstanding)  
   온습도·거리센서 + LCD + 조명 제어 → 학습 효율 향상 IoT 독서대  
 
 ### 🔹 Web / App Development
-- 🌐 **INU 정보기술대 전용 SNS – ESC 소모임 (ESC Club, 2024.09~2025.01)**  
+- [🌐 **INU 정보기술대 전용 SNS – ESC 소모임 (ESC Club, 2024.09~2025.01)** ](https://github.com/ESCSNSN/Front-end) 
   프론트엔드 팀장 → UI/UX 설계, React 구현, JWT 인증, API 통신 / 공모전 출전  
 
-- 🏃 **RUN 기록 관리 Web (2024.11~2024.12)**  
+- [🏃 **RUN 기록 관리 Web (2024.11~2024.12)**](https://github.com/sjlee0303/DB_project_2024)  
   Flask + SQLite 기반 러닝 기록 저장/조회 → 외부 API 연동 확장  
 
-- 📅 **빈칸만남 web (2023.10~2023.12)**  
+- [📅 **빈칸만남 web (2023.10~2023.12)**](https://github.com/Gap-Meet)  
   일정 조율 알고리즘 개발 → 모임시간 Top3 자동 추천 / **학장상 수상 + 코엑스 포스터 발표**
 ---
 
@@ -140,7 +139,7 @@
 # 📂 Detailed Projects
 ## 📌 Embedded / AI Projects 
 
-### 🚗 Pedal Misoperation Detection System (2025.07 ~ 2025.09)
+### 🚗 Is Not Break Down (2025.07 ~ 2025.09)
 - **역할:** 메인 개발자
 - **내용:** 운전자의 급발진 및 페달 오조작 상황을 조기에 감지하는 멀티모달 AI 기반 시스템  
   - **입력:**  
