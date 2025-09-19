@@ -1,32 +1,24 @@
-## 👋 Hi, I'm Soyun Park👋
-🎓 Embedded Systems Engineering @ Incheon National University  
-💡 Interested in Embedded Systems, AI Vision, Robotics, and IoT  
-🏆 Hackathon Organizer | Student Council VP | Research Projects
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=🚙%20Soyun%20Park%20🤖&fontSize=40)
+👋 Hi, I'm Soyun Park  
+🎓 INU Embedded Systems Engineering (Senior, Class of 2026)  
+🔧 Experienced in Embedded Systems, AI Vision, Robotics, and IoT, applying real-time sensor fusion to safety and mobility projects.
+
 
 ---
 
-🔹 Activities & Leadership
-
-- 2024 INU 정보기술대 제1회 해커톤 주관 (96명 참여, 12팀, 12멘토, 10심사위원)
-
-- 2024 정보기술대학 학생회 부회장 (학술/대외행사 주관)
-- 2023 정보기술대학 학생회 운영국장
-
-- 소프트웨어 공모전, 연구체험, 창업동아리, 캡스톤 디자인, SK AI DATA ACADEMY 중급 수료, 코딩봉사 등 다수 프로젝트 참여
-
 <br>
 
-🔹 Skills
+## 🔹 Skills
 
-- Languages: C, C++, Python, MATLAB, SQLite
-
-- Embedded: Arduino, ESP32, Raspberry Pi 5, IMX500
-
-- AI/ML: TensorFlow Lite, PyTorch, YOLOv5/v8, openSMILE
-
-- Web: React, Flask, SQLite, REST API, JWT
-
-- Tools: Git, WSL, VS Code, Simulink, NX MCD
+| 분야                     | 기술                                                                                               |
+| ---------------------- | ------------------------------------------------------------------------------------------------ |
+| **Languages**          | C, C++, Python, MATLAB, SQLite, JavaScript (React), Bash                                         |
+| **Embedded Systems**   | Arduino, ESP32, Raspberry Pi 5, IMX500 AI Camera, STM32 (Low-level register), OBD-II (UART, CAN) |
+| **AI / ML**            | TensorFlow Lite, PyTorch, YOLOv5/v8, openSMILE, CNN, Backpropagation, Custom Dataset        |
+| **Web & App**          | React, Flask, SQLite, REST API, JWT, HTML/CSS, WebSocket                                         |
+| **Simulation**         | MATLAB Simulink, Path Tracking (Pure Pursuit, Stanley)                     |
+| **Tools & Env**        | Git/GitHub, WSL2, VS Code, Linux (Ubuntu/RPi OS), Docker, Jupyter Notebook                       |
+| **Hardware / Sensors** | RX-M1616M(FSR type), MPU-9250 (IMU), HC-SR044 (Ultrasonic), Servo/ESC, RC Receiver (PWM→Interrupt), Multiplexer, IC Circuit Design         |
 
 <br>
 
@@ -52,10 +44,16 @@
 - 📡 **METLAB 연구 체험 프로그램 대회 (2024.07 ~ 2024.09)**   
   연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 악천후 인식 정확도 개선 / **총장상 수상**  
 
+- ⚙️ **STM32 실시간 제어 프로젝트 (2024.05 ~ 2024.06)**  
+  적외선 센서·서보모터·7-Segment를 로우레벨 레지스터로 제어 포함한 실시간 반응형 제어 시스템
+
+- 🎮 **객체지향 SW 프로젝트 (2023.10 ~ 2023.12)**  
+  C++ 기반으로 벽치기 게임과 A* Pathfinding 시각화를 구현, 실시간 이벤트 처리 및 알고리즘
+
+
+
 - 📚 **스마트 독서대 – INU Maker 경진대 (Maker Fair, 2022.09~11)**  
   온습도·거리센서 + LCD + 조명 제어 → 학습 효율 향상 IoT 독서대  
-
-<br>
 
 ### 🔹 Web / App Development
 - 🌐 **INU 정보기술대 전용 SNS – ESC 소모임 (ESC Club, 2024.09~2025.01)**  
@@ -161,6 +159,70 @@
 - **성과:** 인천대 단과대학 연구 체험 활동 **총장상 수상*
 
 ---
+
+### ⚙️ STM32 기반 적외선 센서 & 서보모터 제어 프로젝트(2024.05~06)
+
+- **역할:** 센서 입력 처리 및 서보모터·세그먼트 제어 로직 구현 담당  
+
+- **내용:**  
+  - **적외선(IR) 센서**를 활용해 공이 통과하는 순간을 감지  
+  - 감지 신호를 기반으로 **서보모터**가 동작해 공을 떨어뜨리는 동작 구현  
+  - 공이 떨어질 때마다 **7-Segment 디스플레이**를 통해 카운트를 실시간 표시  
+  - 단순한 HAL 라이브러리 호출이 아니라, **레지스터 단위 설정(ADC, GPIO, Timer, PWM)** 을 통해 **Low-Level 제어**를 직접 구현  
+  - 아크릴 구조물을 활용해 **경사로 제작 및 기울기 조절** 기능 추가 → 다양한 실험 환경 구축  
+
+
+- **기술:**  
+  - **STM32 마이크로컨트롤러 (C, CMSIS 기반)**  
+  - **ADC (Analog to Digital Converter)** 레지스터 직접 제어 → IR 센서 입력값 실시간 처리  
+  - **Timer & PWM 레지스터** 활용 → 서보모터 각도 제어 (하드웨어 타이밍 정확도 확보)  
+  - **GPIO Low-Level 제어** → 7-Segment 직접 구동  
+  - **실시간성 보장**: 인터럽트 기반 이벤트 처리, busy-wait 지양 → 즉각 반응 구현  
+  - **데이터시트 기반 설계**: HAL 추상화가 아닌 **레지스터 주소를 직접 매핑**하여 시스템의 동작 원리부터 튼튼하게 구축  
+  - 아크릴 기반 실험 하드웨어 제작  
+
+
+- **성과:**  
+  - STM32 하드웨어 구조와 데이터시트를 깊이 이해하고, Low-Level 제어 능력 확보  
+  - 여러 센서를 동시에 다루며 **임베디드 실시간 제어 시스템 구현 경험 축적**  
+  - 단순 구현 수준을 넘어 **하드웨어 최적화 및 신뢰성 높은 동작**을 달성  
+ 
+
+---
+
+## 🎮 객체지향 SW 수업 프로젝트 (2023.10 ~ 2023.12)
+
+### 🕹️ 벽치기 게임 (Wall Hitting Game)
+- **역할:** 게임 로직 및 기능 구현 담당  
+- **내용:**  
+  - `Paddle`, `Ball`, `Bomb`, `Heart` 등의 클래스를 직접 설계하여 **상속, 오버라이딩, 오버로딩** 개념을 적용  
+  - 공 튀김, Paddle 충돌, 폭탄 아이템, 목숨 감소 등 다양한 게임 이벤트 구현  
+- **기술:**  
+  - **C++** (객체지향 프로그래밍: 상속/오버라이딩/오버로딩)  
+  - **SFML Graphics** (공, Paddle, 폭탄, 배경 시각화)  
+  - **SFML Audio** (충돌, 아이템 획득, 게임오버 효과음)  
+- **성과:**  
+  - 객체지향 개념을 실제 게임 제작에 적용  
+  - 실시간 반응형 동작으로 완성도 있는 미니게임 제작  
+
+---
+
+### 🐧 A* 경로 탐색 시각화 (A* Pathfinding Visualization)
+- **역할:** 알고리즘 및 시각화 구현 담당  
+- **내용:**  
+  - 마우스 좌클릭으로 목적지 지정 → 장애물을 피해 **최단 경로 탐색**  
+  - 움직이는 벽이 있을 경우에도 **실시간 경로 재계산**  
+  - 경로 탐색 과정(Visited, Path)을 **파란색·노란색 셀**로 시각화  
+- **기술:**  
+  - **C++** (클래스 기반 알고리즘 구현)  
+  - **A\*** 알고리즘 (휴리스틱 기반 최단 경로 탐색)  
+  - **SFML Graphics** (맵, 장애물, 탐색 과정, 경로 시각화)  
+- **성과:**  
+  - **A\*** 알고리즘과 실시간 시각화를 결합하여 탐색 과정을 눈으로 확인 가능  
+  - 펭귄 캐릭터가 장애물을 피하며 목적지까지 이동하는 애니메이션 구현  
+
+---
+
 
 ### 📚 스마트 독서대 – INU Maker 경진대회 (2022.09 ~ 2022.11)
 - **역할:** 팀 개발자 (임베디드 소프트웨어 구현)
