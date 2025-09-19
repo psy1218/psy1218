@@ -94,7 +94,7 @@
 
 ### 🔹 Embedded / AI Projects
 
-- [🚙 자율주행 시뮬레이션( 2025.09 ~ )](https://github.com/jjong102/Third_Impact)
+- [🚙 **자율주행 시뮬레이션( 2025.09 ~ )**](https://github.com/jjong102/Third_Impact)
   <details>
     <summary>👉MATLAB/Simulink 기반 자율주행 시뮬레이션</summary>
   
