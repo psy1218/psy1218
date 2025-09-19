@@ -173,7 +173,7 @@
   
 - [🦽 **핸들 압력 패턴 기반 반자율주행 보행기 (2024.09 ~ 2025.05)**](https://github.com/Capstone-A-Sharp)  
   <details>
-    <summary>👉FSR 압력센서 + 자이로센서 + 모터 제어 → 반자율주행 보행기 / **우수상 수상, 논문 2편 발표** </summary>
+    <summary>👉FSR 압력센서 + 자이로센서 + 모터 제어 → 반자율주행 보행기 / 우수상 수상, 논문 2편 발표</summary>
   
   - **역할:** 임베디드 개발자
   - **내용:** 노약자를 위한 보행 보조기 제작  
@@ -192,7 +192,7 @@
   
 - [🈶 **한글 문자 인식 인공신경망 (2024.10 ~ 2024.12)**](https://github.com/psy1218/Korean_Character_Recognition)
   <details>
-    <summary>👉115클래스 한글 데이터셋 생성 + Forward/Backprop 직접 구현 → AI pipeline 경험** </summary>
+    <summary>👉115클래스 한글 데이터셋 생성 + Forward/Backprop 직접 구현 → AI pipeline 경험 </summary>
 
   - **내용:**  
     - 한글 문자 인식 문제를 직접 다루기 위해 **64×64 흑백 비트맵 기반 한글 이미지 데이터셋**을 자체 제작  
@@ -213,7 +213,7 @@
   
 - [📡 **METLAB 연구 체험 프로그램 대회 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
   <details>
-    <summary>👉연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 악천후 인식 정확도 개선 / **총장상 수상** </summary>
+    <summary>👉연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 악천후 인식 정확도 개선 / 총장상 수상 </summary>
   
   - **역할:** 연구 팀장
   - **주제:** 악천후 상황에서 자율주행 인식 정확도 개선
@@ -351,7 +351,7 @@
   </details>
 - [📅 **빈칸만남 web (2023.10~2023.12)**](https://github.com/Gap-Meet)  
       <details>
-    <summary>👉일정 조율 알고리즘 개발 → 모임시간 Top3 자동 추천 / **학장상 수상 + 코엑스 포스터 발표**</summary>
+    <summary>👉일정 조율 알고리즘 개발 → 모임시간 Top3 자동 추천 / 학장상 수상 + 코엑스 포스터 발표 </summary>
       
   - **역할:** 일정 조정 알고리즘 개발
   - **내용:** 다수 인원의 시간표 데이터를 기반으로 자동으로 모임 시간을 찾아주는 웹 서비스  
