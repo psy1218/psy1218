@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=🚙%20Soyun%20Park%20🤖&fontSize=40)
 👋 Hi, I'm Soyun Park  
-🎓 INU Embedded Systems Engineering (Senior, Class of 2026)  
-🔧 Experienced in Embedded Systems, AI Vision, Robotics, and IoT, applying real-time sensor fusion to safety and mobility projects.
+🎓 INU Embedded Systems Engineering  
+🔧 Experienced in Embedded Systems, AI Vision, and IoT, applying real-time sensor fusion to safety and mobility projects.
 
 
 ---
@@ -10,15 +10,64 @@
 
 ## 🔹 Skills
 
-| 분야                     | 기술                                                                                               |
-| ---------------------- | ------------------------------------------------------------------------------------------------ |
-| **Languages**          | C, C++, Python, MATLAB, SQLite, JavaScript (React), Bash                                         |
-| **Embedded Systems**   | Arduino, ESP32, Raspberry Pi 5, IMX500 AI Camera, STM32 (Low-level register), OBD-II (UART, CAN) |
-| **AI / ML**            | TensorFlow Lite, PyTorch, YOLOv5/v8, openSMILE, CNN, Backpropagation, Custom Dataset        |
-| **Web & App**          | React, Flask, SQLite, REST API, JWT, HTML/CSS, WebSocket                                         |
-| **Simulation**         | MATLAB Simulink, Path Tracking (Pure Pursuit, Stanley)                     |
-| **Tools & Env**        | Git/GitHub, WSL2, VS Code, Linux (Ubuntu/RPi OS), Docker, Jupyter Notebook                       |
-| **Hardware / Sensors** | RX-M1616M(FSR type), MPU-9250 (IMU), HC-SR044 (Ultrasonic), Servo/ESC, RC Receiver (PWM→Interrupt), Multiplexer, IC Circuit Design         |
+### Languages
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=Mathworks&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+
+### Embedded Systems
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-000000?style=flat-square&logo=espressif&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![IMX500](https://img.shields.io/badge/IMX500_AI_Camera-FF6F00?style=flat-square&logo=sony&logoColor=white)
+![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
+![OBD-II](https://img.shields.io/badge/OBD--II-FF9900?style=flat-square&logo=car&logoColor=white)
+
+### AI / ML
+![TensorFlow Lite](https://img.shields.io/badge/TensorFlow_Lite-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLOv5/v8-00FFFF?style=flat-square&logo=opencv&logoColor=black)
+![openSMILE](https://img.shields.io/badge/openSMILE-FF1493?style=flat-square&logo=audacity&logoColor=white)
+![CNN](https://img.shields.io/badge/CNN-000000?style=flat-square&logo=deepmind&logoColor=white)
+![Backpropagation](https://img.shields.io/badge/Backpropagation-2E8B57?style=flat-square&logo=matrix&logoColor=white)
+![Custom Dataset](https://img.shields.io/badge/Custom_Dataset-4682B4?style=flat-square&logo=googledrive&logoColor=white)
+
+### Simulation
+![MATLAB Simulink](https://img.shields.io/badge/Simulink-FF7300?style=flat-square&logo=mathworks&logoColor=white)
+![Path Tracking](https://img.shields.io/badge/Path_Tracking-008080?style=flat-square&logo=autodesk&logoColor=white)
+
+### Tools & Env
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![WSL2](https://img.shields.io/badge/WSL2-0078D6?style=flat-square&logo=windows&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+### Hardware / Sensors
+![FSR](https://img.shields.io/badge/FSR_Sensor-696969?style=flat-square&logo=analogdevices&logoColor=white)
+![MPU-9250](https://img.shields.io/badge/MPU--9250-008000?style=flat-square&logo=arduino&logoColor=white)
+![HC-SR04](https://img.shields.io/badge/HC--SR04-6495ED?style=flat-square&logo=sonarsource&logoColor=white)
+![RX-M1616M](https://img.shields.io/badge/RX--M1616M-DAA520?style=flat-square&logo=analog&logoColor=white)
+![Servo/ESC](https://img.shields.io/badge/Servo/ESC-FF4500?style=flat-square&logo=servo&logoColor=white)
+![RC Receiver](https://img.shields.io/badge/RC_Receiver-800080?style=flat-square&logo=car&logoColor=white)
+![Multiplexer](https://img.shields.io/badge/Multiplexer-191970?style=flat-square&logo=ibm&logoColor=white)
+![IC Design](https://img.shields.io/badge/IC_Design-2F4F4F?style=flat-square&logo=semanticscholar&logoColor=white)
+
+### Web & App
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-FF5733?style=flat-square&logo=postman&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
 
 <br>
 
@@ -293,6 +342,17 @@
 - [RUN 기록 관리 web](https://github.com/sjlee0303/DB_project_2024)
 - [빈칸만남 web](https://github.com/Gap-Meet)
 ---
+
+### 📊 GitHub Stats
+
+![Soyun's GitHub stats](https://github-readme-stats.vercel.app/api?username=psy1218&show_icons=true&theme=radical)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=psy1218&layout=compact&theme=radical&hide=jupyter%20notebook)
+
+### 📊 BOJ Stats
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=asz1218)](https://solved.ac/profile/psy1218)
+
+
 
 
 <!--
