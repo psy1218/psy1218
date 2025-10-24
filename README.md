@@ -96,7 +96,7 @@
 
 - [🚙 **자율주행 시뮬레이션 대회 금상( 2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
   <details>
-    <summary>👉MATLAB/Simulink 기반 자율주행 시뮬레이션</summary>
+    <summary>👉 MATLAB/Simulink 기반 자율주행 시뮬레이션 - 대한전기학회 자율주행경진대회</summary>
   
   - **역할:** 시스템 설계 및 시뮬레이션 구현  
   - **내용:**  
