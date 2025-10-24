@@ -213,7 +213,7 @@
   
 - [📡 **METLAB 연구 체험 프로그램 대회 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
   <details>
-    <summary>👉연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 악천후 인식 정확도 개선 / 총장상 수상 </summary>
+    <summary>👉연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 자율주행자동차 악천후 인식 정확도 개선 / 총장상 수상 </summary>
   
   - **역할:** 연구 팀장
   - **주제:** 악천후 상황에서 자율주행 인식 정확도 개선
