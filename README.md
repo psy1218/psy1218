@@ -94,7 +94,7 @@
 
 ### 🔹 Embedded / AI Projects
 
-- [🚙 **자율주행 시뮬레이션( 2025.09 ~ )**](https://github.com/jjong102/Third_Impact)
+- [🚙 **자율주행 시뮬레이션 대회 금상( 2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
   <details>
     <summary>👉MATLAB/Simulink 기반 자율주행 시뮬레이션</summary>
   
@@ -211,7 +211,7 @@
 
   </details>
   
-- [📡 **METLAB 연구 체험 프로그램 대회 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
+- [📡 **METLAB 연구 체험 프로그램 대회 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
   <details>
     <summary>👉연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 악천후 인식 정확도 개선 / 총장상 수상 </summary>
   
@@ -351,7 +351,7 @@
   </details>
 - [📅 **빈칸만남 web (2023.10~2023.12)**](https://github.com/Gap-Meet)  
       <details>
-    <summary>👉일정 조율 알고리즘 개발 → 모임시간 Top3 자동 추천 / 학장상 수상 + 코엑스 포스터 발표 </summary>
+    <summary>👉일정 조율 알고리즘 개발 → 모임시간 Top3 자동 추천 / 학장상 수상(우수상) + 코엑스 포스터 발표 </summary>
       
   - **역할:** 일정 조정 알고리즘 개발
   - **내용:** 다수 인원의 시간표 데이터를 기반으로 자동으로 모임 시간을 찾아주는 웹 서비스  
