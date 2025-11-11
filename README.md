@@ -130,7 +130,7 @@
   </details>
   
 
-- 🐝 [**양봉 프로젝트 (WCL-INU 연구실) (2025.03 ~ )**](https://github.com/WCL-INU/BEE_COUNT_YOLO5)
+- 🐝 [**양봉 프로젝트 (WCL-INU 연구실) (2025.01 ~ )**](https://github.com/WCL-INU/BEE_COUNT_YOLO5)
   <details>
     <summary>👉YOLOv5/v8 기반 벌 탐지/계수 모델 → 커스텀 데이터셋 제작 및 학습 파이프라인 구축</summary>
   
