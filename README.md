@@ -150,7 +150,7 @@
   
 - 🚙 [**RC카 기반 프로젝트 (2025.05 ~ 2025.06)**](https://github.com/psy1218/RC_Car)
   <details>
-  <summary>👉 Flask 스트리밍 + PID 제어 + RC 신호 수신 → 자율주행 & 수동 전환</summary>
+  <summary>👉 Flask 스트리밍 + RC 신호 수신 → 자율주행 & 수동 전환</summary>
   
   - **역할:** 시스템 통합 개발
   - **내용:**  
@@ -158,12 +158,12 @@
     - OpenCV 기반 차선 인식 및 **PID 알고리즘**을 적용한 조향 제어로 **라인트레이싱 자율주행** 구현  
     - Radiolink AT9 조종기 & R9DS 수신기에서 PWM 신호를 받아, **수동 모드로 전환 시 RC 입력 우선 제어** 가능하도록 설계  
     - Arduino Nano를 서브 컨트롤러로 사용해 Servo(조향) 및 ESC(모터) 제어를 안정화, Raspberry Pi와 시리얼 통신으로 통합
-  - **기술:** Raspberry Pi 5, Picamera2, Arduino Nano, Python (Flask, OpenCV), PID 제어, PWM 신호 처리
+  - **기술:** Raspberry Pi 5, Picamera2, Arduino Nano, Python (Flask, OpenCV), PWM 신호 처리
   - **성과:**  
     - **자율주행 ↔ 수동 전환 모드**를 실시간으로 스위칭 가능  
     - **긴급사출(Emergency Kill Switch)** 기능을 구현해 안전성 확보  
     - Flask 기반 웹 인터페이스에서 주행 영상을 확인하면서 제어 가능 → **원격 관제 환경** 시연 성공  
-    - 실제 하드웨어(조종기/수신기 + RC카 플랫폼)와 소프트웨어(PID + Flask 서버)를 통합하며 **임베디드 시스템 전주기 경험**
+    - 실제 하드웨어(조종기/수신기 + RC카 플랫폼)와 소프트웨어( Flask 서버)를 통합하며 **임베디드 시스템 전주기 경험**
   - **의의:**  
     - 단순 라인트레이싱을 넘어, **수동/자율 주행 통합 및 안전 기능(긴급사출)** 까지 구현  
     - 학부 수준에서 실제 차량 시스템의 **HMI(사람-기계 인터페이스)** 와 유사한 구조를 소형 RC카에 적용한 사례
