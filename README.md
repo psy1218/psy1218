@@ -154,7 +154,7 @@
   - **역할:** 시스템 통합 개발
   - **내용:**  
     - Raspberry Pi 5 + Picamera2를 활용해 RC카 주행 영상을 **Flask 웹 서버**를 통해 실시간 스트리밍  
-    - OpenCV 기반 차선 인식 및 **PID 알고리즘**을 적용한 조향 제어로 **라인트레이싱 자율주행** 구현  
+    - OpenCV 기반 차선 인식 룰 베이스 조향 제어로 **라인트레이싱 자율주행** 구현  
     - Radiolink AT9 조종기 & R9DS 수신기에서 PWM 신호를 받아, **수동 모드로 전환 시 RC 입력 우선 제어** 가능하도록 설계  
     - Arduino Nano를 서브 컨트롤러로 사용해 Servo(조향) 및 ESC(모터) 제어를 안정화, Raspberry Pi와 시리얼 통신으로 통합
   - **기술:** Raspberry Pi 5, Picamera2, Arduino Nano, Python (Flask, OpenCV), PWM 신호 처리
