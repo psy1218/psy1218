@@ -26,6 +26,10 @@
 ![IMX500](https://img.shields.io/badge/IMX500_AI_Camera-FF6F00?style=flat-square&logo=sony&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
 ![OBD-II](https://img.shields.io/badge/OBD--II-FF9900?style=flat-square&logo=car&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
+![PubSubClient](https://img.shields.io/badge/PubSubClient-4B0082?style=flat-square&logo=platformio&logoColor=white)
+
+
 
 ### AI / ML
 ![TensorFlow Lite](https://img.shields.io/badge/TensorFlow_Lite-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
@@ -35,6 +39,9 @@
 ![CNN](https://img.shields.io/badge/CNN-000000?style=flat-square&logo=deepmind&logoColor=white)
 ![Backpropagation](https://img.shields.io/badge/Backpropagation-2E8B57?style=flat-square&logo=matrix&logoColor=white)
 ![Custom Dataset](https://img.shields.io/badge/Custom_Dataset-4682B4?style=flat-square&logo=googledrive&logoColor=white)
+![Image Classification](https://img.shields.io/badge/Image_Classification-1E90FF?style=flat-square&logo=googlephotos&logoColor=white)
+![Data Labeling](https://img.shields.io/badge/Data_Labeling-FF69B4?style=flat-square&logo=labelstudio&logoColor=white)
+
 
 ### Simulation
 ![MATLAB Simulink](https://img.shields.io/badge/Simulink-FF7300?style=flat-square&logo=mathworks&logoColor=white)
@@ -48,6 +55,8 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
+
+
 ### Hardware / Sensors
 ![FSR](https://img.shields.io/badge/FSR_Sensor-696969?style=flat-square&logo=analogdevices&logoColor=white)
 ![MPU-9250](https://img.shields.io/badge/MPU--9250-008000?style=flat-square&logo=arduino&logoColor=white)
@@ -57,8 +66,10 @@
 ![RC Receiver](https://img.shields.io/badge/RC_Receiver-800080?style=flat-square&logo=car&logoColor=white)
 ![Multiplexer](https://img.shields.io/badge/Multiplexer-191970?style=flat-square&logo=ibm&logoColor=white)
 ![IC Design](https://img.shields.io/badge/IC_Design-2F4F4F?style=flat-square&logo=semanticscholar&logoColor=white)
+![DC Motor](https://img.shields.io/badge/DC_Motor-696969?style=flat-square&logo=tesla&logoColor=white)
+![L298N](https://img.shields.io/badge/L298N-2F4F4F?style=flat-square&logo=electron&logoColor=white)
 
-### Web & App
+### Web & App 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
@@ -67,6 +78,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
+
 
 ---
 
@@ -92,6 +104,62 @@
 # 📑 Summary of Activities
 
 ### 🔹 Embedded / AI Projects
+- [🏭 **현대오토에버 스마트팩토리 부트캠프 머신비전 프로젝트 (2026.03)**](https://github.com/psy1218/HYUNDAI_AUTOEVER_BOOTCAMP_Machine_Vision_Projectz)  
+  <details>
+  <summary>👉 머신비전 기반 프로젝트 2종: 실내 AR 네비게이션 시스템 / 스마트 팩토리 박스 품질 검사 및 분류 시스템</summary>
+
+  ## 🧭 실내 AR 네비게이션 시스템
+
+  - **역할:**  
+    전체 프로젝트 기획, 데이터셋 구성, 이미지 분류 모델 적용, 경로 안내 로직 구현, UI/UX 설계 및 시스템 통합 담당
+
+  - **내용:**  
+    - 실내 공간에서는 GPS 기반 길안내가 어렵다는 점에 착안하여, **카메라 입력 영상으로 현재 위치와 방향을 인식**하고 목적지까지의 이동 방향을 실시간으로 안내하는 시스템 구현  
+    - 단순히 위치를 분류하는 데 그치지 않고, 사용자가 즉시 이해할 수 있도록 **직진 / 좌회전 / 우회전 / 후진**과 같은 행동 중심 명령으로 변환하는 로직 설계  
+    - 목적지 선택 → 현재 화면 입력 → 방향 예측 → 경로 계산 → UI 반영의 흐름으로 구성하여, **머신비전 결과를 실제 사용자 행동으로 연결**  
+    - 시연 과정에서 사용자가 직관적으로 반응할 수 있도록 큰 방향 표시, 시각적 피드백 등 **UI/UX 요소를 함께 설계**
+
+  - **기술:**  
+    - **Python**  
+    - **PyTorch**  
+    - **OpenCV / NumPy**  
+    - **Flask / REST API**  
+    - **HTML / CSS / JavaScript**
+
+  - **성과:**  
+    - 실내 이미지 기반으로 현재 위치/방향을 인식하고 목적지까지의 이동 방향을 안내하는 **AR 네비게이션 프로토타입 구현**  
+    - 머신비전 결과를 그대로 보여주는 것이 아니라, **사용자가 바로 행동할 수 있는 명령으로 변환하는 UX 중심 설계 경험 확보**  
+    - 입력–추론–경로 계산–UI 반영까지 이어지는 **end-to-end 시스템 통합 경험 축적**
+
+  ---
+
+  ## 📦 스마트 팩토리 박스 품질 검사 및 분류 시스템
+
+  - **역할:**  
+    전체 시스템 기획, 비전 추론 흐름 설계, 세션 기반 최종 판정 로직 구현, MQTT 통신 구조 설계, ESP32 모터/서보 제어 및 시연 통합 담당
+
+  - **내용:**  
+    - 제조 현장에서 박스 외관의 찢김, 구멍, 개봉 상태 등의 이상 여부를 **머신비전으로 판별**하고, 결과에 따라 자동 분류되도록 설계한 스마트 팩토리 시스템 구현  
+    - 단일 프레임 결과에 바로 의존하지 않고, 박스가 카메라 시야에 들어온 순간부터 벗어날 때까지를 하나의 **검사 세션(session)** 으로 관리하여 최종 상태를 판정  
+    - 프레임별 예측값을 누적해 `NORMAL`, `DEFECTIVE`, `RECHECK` 상태를 결정함으로써, **일시적인 오검출이나 흔들림에 강한 판정 로직** 설계  
+    - 최종 검사 결과를 **MQTT로 ESP32에 전송**하고, ESP32가 이를 바탕으로 컨베이어와 서보모터를 제어해 상태별로 자동 분류하도록 구현  
+    - **카메라 → 비전 추론 → 상태 판단 → MQTT 전송 → ESP32 제어 → 물리적 분류**까지 이어지는 스마트 팩토리형 end-to-end 흐름 구성
+
+  - **기술:**  
+    - **Python**  
+    - **YOLO / PyTorch**  
+    - **OpenCV / NumPy**  
+    - **MQTT / PubSubClient**  
+    - **ESP32 / Arduino IDE / ESP32Servo**  
+    - **DC Motor / L298N / Servo Motor**
+
+  - **성과:**  
+    - 박스 품질 검사 결과를 실제 하드웨어 제어와 연결해, **정상 / 불량 / 재검사 자동 분류 프로토타입 구현**  
+    - 단순 결함 검출 모델이 아니라, **AI 판정이 실제 공정 동작으로 이어지는 자동화 시스템**을 설계·구현한 경험 확보  
+    - 비전, 통신, 임베디드 제어를 통합해 **현장형 스마트 팩토리 시스템 관점의 문제 해결 경험** 축적
+
+  </details>
+
 
 - [🚙 **자율주행 시뮬레이션 대회 금상( 2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
   <details>
