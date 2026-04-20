@@ -380,6 +380,26 @@
   </details>
   
 ### 🔹 Web / App Development
+- [🏭 **AMHS Frontend – 스마트팩토리 부트캠프 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
+  <details>
+  <summary>👉FE2 프론트엔드 개발 → 장비 목록, 알림 이력, 로그인, 정비 관리, 임계값 설정, 추적 분석 페이지 중심 구현</summary>
+
+  - **역할:** FE2 프론트엔드 개발  
+  - **내용:** 반도체/스마트팩토리 환경의 AMHS(Automated Material Handling System)에서 사용되는 OHT, AGV 등 물류 장비의 상태를 모니터링하고 관리할 수 있는 웹 기반 프론트엔드 시스템 개발  
+    - **담당 페이지 구현:** 장비 목록(SC-03), 알림 이력(SC-04), 로그인(SC-05), 정비 목록(SC-06), 정비 상세(SC-07), 임계값 설정(SC-08), 장비 추적 분석(SC-10) 페이지를 담당하여 사용자 흐름에 맞는 화면 구조와 기능 구현  
+    - **세부 화면 구성:** 장비 상태 배지, 테이블 기반 목록 UI, 알림 히스토리 탭, 정비 상태 전이, 관리자용 임계값 설정, 추적 분석 차트 등 실제 운영 화면 중심으로 구현  
+    - **공통 컴포넌트 및 구조 설계:** AppLayout, StatusBadge, DataTable, FilterBar, alertStore, authStore, router 구조를 담당하며 재사용 가능한 UI와 공통 구조를 설계  
+    - **상태관리 및 인증 처리:** Pinia를 활용해 로그인 상태, 사용자 역할, 알림 데이터, 화면 상태를 관리하고 라우트 가드 및 역할(Role) 기반 메뉴 분기 적용  
+    - **실시간 알림 기능 구현:** STOMP + SockJS 기반 WebSocket 구조를 적용해 서버 알림 토픽을 구독하고, 수신 메시지를 alertStore와 Toast UI에 반영하여 미확인 알림 개수와 실시간 알림 표시 구현  
+    - **차트 및 데이터 시각화:** ECharts를 활용해 장비 추적 분석, 센서 데이터, 통계성 화면을 시각화하고 데이터 흐름에 맞춰 mock 기반 개발 후 API 연동 구조로 확장  
+    - **API 연동:** Axios와 JWT 인터셉터를 적용해 로그인, 장비 조회, 알림 이력, 정비 데이터, 임계값 설정 등 인증이 필요한 요청을 처리할 수 있도록 구성  
+  - **기술:** Vue 3, Vite, Pinia, Vue Router, Axios, ECharts, STOMP, SockJS, CSS Variables, Composable Pattern, Docker, Nginx  
+  - **성과:**  
+    - AMHS 운영에 필요한 장비 조회, 알림 확인, 정비 관리, 분석 기능을 웹 UI로 구현하며 **스마트팩토리 프론트엔드 실무 흐름 경험**  
+    - FE2 담당 페이지와 공통 자원을 함께 설계·구현하며 **페이지 개발뿐 아니라 구조 분리, 상태관리, 실시간 알림 연동까지 경험**
+
+  </details>
+
 - [🌐 **INU 정보기술대 전용 SNS – ESC 소모임 (ESC Club, 2024.09~2025.01)** ](https://github.com/ESCSNSN/Front-end) 
     <details>
     <summary>👉프론트엔드 팀장 → UI/UX 설계, React 구현, JWT 인증, API 통신 / 공모전 출전</summary>
