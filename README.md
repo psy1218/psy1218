@@ -10,74 +10,37 @@
 
 ## 🔹 Hands-on Experience
 
-### Languages
+### Core Languages
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=Mathworks&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-### Embedded Systems
+### Embedded & Control
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-000000?style=flat-square&logo=espressif&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
-![IMX500](https://img.shields.io/badge/IMX500_AI_Camera-FF6F00?style=flat-square&logo=sony&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
-![OBD-II](https://img.shields.io/badge/OBD--II-FF9900?style=flat-square&logo=car&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
-![PubSubClient](https://img.shields.io/badge/PubSubClient-4B0082?style=flat-square&logo=platformio&logoColor=white)
+![DC Motor](https://img.shields.io/badge/DC_Motor-696969?style=flat-square&logo=tesla&logoColor=white)
+![Servo/ESC](https://img.shields.io/badge/Servo/ESC-FF4500?style=flat-square&logo=servo&logoColor=white)
 
-
-
-### AI / ML
-![TensorFlow Lite](https://img.shields.io/badge/TensorFlow_Lite-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+### AI / Vision
 ![YOLO](https://img.shields.io/badge/YOLOv5/v8-00FFFF?style=flat-square&logo=opencv&logoColor=black)
+![TensorFlow Lite](https://img.shields.io/badge/TensorFlow_Lite-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![openSMILE](https://img.shields.io/badge/openSMILE-FF1493?style=flat-square&logo=audacity&logoColor=white)
-![CNN](https://img.shields.io/badge/CNN-000000?style=flat-square&logo=deepmind&logoColor=white)
-![Backpropagation](https://img.shields.io/badge/Backpropagation-2E8B57?style=flat-square&logo=matrix&logoColor=white)
-![Custom Dataset](https://img.shields.io/badge/Custom_Dataset-4682B4?style=flat-square&logo=googledrive&logoColor=white)
-![Image Classification](https://img.shields.io/badge/Image_Classification-1E90FF?style=flat-square&logo=googlephotos&logoColor=white)
-![Data Labeling](https://img.shields.io/badge/Data_Labeling-FF69B4?style=flat-square&logo=labelstudio&logoColor=white)
-
-
-### Simulation
-![MATLAB Simulink](https://img.shields.io/badge/Simulink-FF7300?style=flat-square&logo=mathworks&logoColor=white)
-![Path Tracking](https://img.shields.io/badge/Path_Tracking-008080?style=flat-square&logo=autodesk&logoColor=white)
-
-### Tools & Env
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![WSL2](https://img.shields.io/badge/WSL2-0078D6?style=flat-square&logo=windows&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-
-
 
 ### Hardware / Sensors
 ![FSR](https://img.shields.io/badge/FSR_Sensor-696969?style=flat-square&logo=analogdevices&logoColor=white)
 ![MPU-9250](https://img.shields.io/badge/MPU--9250-008000?style=flat-square&logo=arduino&logoColor=white)
-![HC-SR04](https://img.shields.io/badge/HC--SR04-6495ED?style=flat-square&logo=sonarsource&logoColor=white)
 ![RX-M1616M](https://img.shields.io/badge/RX--M1616M-DAA520?style=flat-square&logo=analog&logoColor=white)
-![Servo/ESC](https://img.shields.io/badge/Servo/ESC-FF4500?style=flat-square&logo=servo&logoColor=white)
-![RC Receiver](https://img.shields.io/badge/RC_Receiver-800080?style=flat-square&logo=car&logoColor=white)
-![Multiplexer](https://img.shields.io/badge/Multiplexer-191970?style=flat-square&logo=ibm&logoColor=white)
-![IC Design](https://img.shields.io/badge/IC_Design-2F4F4F?style=flat-square&logo=semanticscholar&logoColor=white)
-![DC Motor](https://img.shields.io/badge/DC_Motor-696969?style=flat-square&logo=tesla&logoColor=white)
-![L298N](https://img.shields.io/badge/L298N-2F4F4F?style=flat-square&logo=electron&logoColor=white)
+![OBD-II](https://img.shields.io/badge/OBD--II-FF9900?style=flat-square&logo=car&logoColor=white)
 
-### Web & App 
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-FF5733?style=flat-square&logo=postman&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
+### Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=Mathworks&logoColor=white)
+![Simulink](https://img.shields.io/badge/Simulink-FF7300?style=flat-square&logo=mathworks&logoColor=white)
 
 
 ---
