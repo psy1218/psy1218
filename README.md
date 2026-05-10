@@ -160,9 +160,9 @@
   </details>
   
 
-- 🐝 [**양봉 프로젝트 (WCL-INU 연구실) (2025.01 ~ )**](https://github.com/WCL-INU/BEE_COUNT_YOLO5)
+- 🐝 [**이상기온 대응 꿀벌 스마트 관리 기술 개발 (WCL-INU 연구실) (2025.01 ~ )**](https://github.com/WCL-INU/BEE_COUNT_YOLO5)
   <details>
-    <summary>👉YOLOv5/v8 기반 벌 탐지/계수 모델 → 커스텀 데이터셋 제작 및 학습 파이프라인 구축</summary>
+    <summary>👉YOLOv5/v11 기반 벌 탐지/계수 모델 → 커스텀 데이터셋 제작 및 학습 파이프라인 구축</summary>
   
   - **역할:** 데이터셋 제작 및 모델 학습 담당
   - **내용:** YOLOv5/v8을 활용한 꿀벌 탐지 및 계수 연구  
