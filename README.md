@@ -343,7 +343,33 @@
   </details>
   
 ### 🔹 Web / App Development
-- [🏭 **AMHS Frontend – 스마트팩토리 부트캠프 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
+- [📊 **설비·환경 통합 관제 시스템 – SCADA 프로젝트 (2026.05)**](https://github.com/SF-KONA/SCADA-frontend)  
+  <details>
+  <summary>👉 Frontend / DB / MQTT 데이터 수집 담당 → 로그인·회원가입, 사용자 관리, 비상 알람, 공정 페이지, 설비 데이터 수집·DB 저장</summary>
+
+  - **역할:** Frontend / DB / MQTT 데이터 수집 담당  
+
+  - **내용:** 스마트팩토리 환경에서 설비·공정·환경 데이터를 통합 모니터링하는 SCADA 기반 관제 시스템 개발  
+    - **Frontend 구현:** Vue 3 기반 화면 구현 및 전체 페이지 UI 시인성 개선  
+    - **로그인 / 회원가입:** 사용자 로그인, 회원가입, 인증 관련 화면 구성  
+    - **사용자 관리:** 관리자 관점의 사용자 목록 조회, 계정 상태 및 역할 관리 화면 구현  
+    - **비상 알람:** 설비 이상 상황을 빠르게 확인할 수 있는 비상 알람 UI 구성  
+    - **공정 페이지:** 공정별 설비 상태를 확인할 수 있는 모니터링 화면 구현  
+    - **데이터 수집:** Python으로 MQTT 기반 설비 데이터 발행 구조 구축  
+    - **데이터 연동:** Node-RED에서 MQTT 데이터를 수신하고 MySQL DB에 저장하는 흐름 구현  
+    - **협업:** FE 협업 세팅 가이드 작성, 브랜치 전략 및 PR 기반 협업 참여  
+
+  - **기술:** Vue 3, Pinia, Vue Router, Axios, Tailwind CSS, ECharts, Python, MQTT, Node-RED, MySQL, GitHub  
+
+  - **성과:**  
+    - 설비 데이터 생성 → MQTT 송신 → Node-RED 수신 → DB 저장 → Frontend 시각화로 이어지는 데이터 흐름 경험  
+    - 로그인, 회원가입, 사용자 관리, 비상 알람, 공정 모니터링 등 관제 시스템 주요 화면 구현  
+    - 단순 화면 구현을 넘어 데이터 수집·저장·조회·시각화 흐름을 함께 이해하며 Frontend 개발 진행  
+    - FE 개발 환경과 협업 규칙을 정리하여 팀 개발 효율 개선  
+
+  </details>
+
+- [🏭 **AMHS(Automated Material Handling System) 모니터링 및 관리 시스템 – 스마트팩토리 프로젝 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
   <details>
   <summary>👉FE2 프론트엔드 개발 → 장비 목록, 알림 이력, 로그인, 정비 관리, 임계값 설정, 추적 분석 페이지 중심 구현</summary>
 
