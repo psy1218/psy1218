@@ -66,7 +66,53 @@
 ---
 # 📑 Summary of Activities
 
-### 🔹 Embedded / AI Projects
+
+### 🔹 Smart Factory Projects
+- [📊 **설비·환경 통합 관제 시스템 – SCADA 프로젝트 (2026.05)**](https://github.com/SF-KONA/SCADA-frontend)  
+  <details>
+  <summary>👉 Frontend / DB / MQTT 데이터 수집 담당 → 로그인·회원가입, 사용자 관리, 비상 알람, 공정 페이지, 설비 데이터 수집·DB 저장</summary>
+
+  - **역할:** Frontend / DB / MQTT 데이터 수집 담당  
+
+  - **내용:** 스마트팩토리 환경에서 설비·공정·환경 데이터를 통합 모니터링하는 SCADA 기반 관제 시스템 개발  
+    - **Frontend 구현:** Vue 3 기반 화면 구현 및 전체 페이지 UI 시인성 개선  
+    - **로그인 / 회원가입:** 사용자 로그인, 회원가입, 인증 관련 화면 구성  
+    - **사용자 관리:** 관리자 관점의 사용자 목록 조회, 계정 상태 및 역할 관리 화면 구현  
+    - **비상 알람:** 설비 이상 상황을 빠르게 확인할 수 있는 비상 알람 UI 구성  
+    - **공정 페이지:** 공정별 설비 상태를 확인할 수 있는 모니터링 화면 구현  
+    - **데이터 수집:** Python으로 MQTT 기반 설비 데이터 발행 구조 구축  
+    - **데이터 연동:** Node-RED에서 MQTT 데이터를 수신하고 MySQL DB에 저장하는 흐름 구현  
+    - **협업:** FE 협업 세팅 가이드 작성, 브랜치 전략 및 PR 기반 협업 참여  
+
+  - **기술:** Vue 3, Pinia, Vue Router, Axios, Tailwind CSS, ECharts, Python, MQTT, Node-RED, MySQL, GitHub  
+
+  - **성과:**  
+    - 설비 데이터 생성 → MQTT 송신 → Node-RED 수신 → DB 저장 → Frontend 시각화로 이어지는 데이터 흐름 경험  
+    - 로그인, 회원가입, 사용자 관리, 비상 알람, 공정 모니터링 등 관제 시스템 주요 화면 구현  
+    - 단순 화면 구현을 넘어 데이터 수집·저장·조회·시각화 흐름을 함께 이해하며 Frontend 개발 진행  
+    - FE 개발 환경과 협업 규칙을 정리하여 팀 개발 효율 개선  
+
+  </details>
+
+- [🏭 **AMHS(Automated Material Handling System) 모니터링 및 관리 시스템 – 스마트팩토리 프로젝 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
+  <details>
+  <summary>👉FE2 프론트엔드 개발 → 장비 목록, 알림 이력, 로그인, 정비 관리, 임계값 설정, 추적 분석 페이지 중심 구현</summary>
+
+  - **역할:** FE2 프론트엔드 개발  
+  - **내용:** 반도체/스마트팩토리 환경의 AMHS(Automated Material Handling System)에서 사용되는 OHT, AGV 등 물류 장비의 상태를 모니터링하고 관리할 수 있는 웹 기반 프론트엔드 시스템 개발  
+    - **담당 페이지 구현:** 장비 목록(SC-03), 알림 이력(SC-04), 로그인(SC-05), 정비 목록(SC-06), 정비 상세(SC-07), 임계값 설정(SC-08), 장비 추적 분석(SC-10) 페이지를 담당하여 사용자 흐름에 맞는 화면 구조와 기능 구현  
+    - **세부 화면 구성:** 장비 상태 배지, 테이블 기반 목록 UI, 알림 히스토리 탭, 정비 상태 전이, 관리자용 임계값 설정, 추적 분석 차트 등 실제 운영 화면 중심으로 구현  
+    - **공통 컴포넌트 및 구조 설계:** AppLayout, StatusBadge, DataTable, FilterBar, alertStore, authStore, router 구조를 담당하며 재사용 가능한 UI와 공통 구조를 설계  
+    - **상태관리 및 인증 처리:** Pinia를 활용해 로그인 상태, 사용자 역할, 알림 데이터, 화면 상태를 관리하고 라우트 가드 및 역할(Role) 기반 메뉴 분기 적용  
+    - **실시간 알림 기능 구현:** STOMP + SockJS 기반 WebSocket 구조를 적용해 서버 알림 토픽을 구독하고, 수신 메시지를 alertStore와 Toast UI에 반영하여 미확인 알림 개수와 실시간 알림 표시 구현  
+    - **차트 및 데이터 시각화:** ECharts를 활용해 장비 추적 분석, 센서 데이터, 통계성 화면을 시각화하고 데이터 흐름에 맞춰 mock 기반 개발 후 API 연동 구조로 확장  
+    - **API 연동:** Axios와 JWT 인터셉터를 적용해 로그인, 장비 조회, 알림 이력, 정비 데이터, 임계값 설정 등 인증이 필요한 요청을 처리할 수 있도록 구성  
+  - **기술:** Vue 3, Vite, Pinia, Vue Router, Axios, ECharts, STOMP, SockJS, CSS Variables, Composable Pattern, Docker, Nginx  
+  - **성과:**  
+    - AMHS 운영에 필요한 장비 조회, 알림 확인, 정비 관리, 분석 기능을 웹 UI로 구현하며 **스마트팩토리 프론트엔드 실무 흐름 경험**  
+    - FE2 담당 페이지와 공통 자원을 함께 설계·구현하며 **페이지 개발뿐 아니라 구조 분리, 상태관리, 실시간 알림 연동까지 경험**
+
+  </details>
 - [🏭 **현대오토에버 스마트팩토리 부트캠프 머신비전 프로젝트 (2026.03)**](https://github.com/psy1218/HYUNDAI_AUTOEVER_BOOTCAMP_Machine_Vision_Projectz)  
   <details>
   <summary>👉 머신비전 기반 프로젝트 2종: 실내 AR 네비게이션 시스템 / 스마트 팩토리 박스 품질 검사 및 분류 시스템</summary>
@@ -122,6 +168,10 @@
     - 비전, 통신, 임베디드 제어를 통합해 **현장형 스마트 팩토리 시스템 관점의 문제 해결 경험** 축적
 
   </details>
+
+---
+
+### 🔹 Embedded / AI Projects
 
 
 - [🚙 **자율주행 시뮬레이션 대회 금상( 2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
@@ -341,53 +391,9 @@
     - 단순 조명 기기를 넘어 **사용자 학습 효율 및 건강을 고려한 IoT형 독서대** 구현  
     - 교내 Maker 경진대회 출품, 임베디드 시스템 설계 및 통합 제어 경험 확보
   </details>
-  
+
+---
 ### 🔹 Web / App Development
-- [📊 **설비·환경 통합 관제 시스템 – SCADA 프로젝트 (2026.05)**](https://github.com/SF-KONA/SCADA-frontend)  
-  <details>
-  <summary>👉 Frontend / DB / MQTT 데이터 수집 담당 → 로그인·회원가입, 사용자 관리, 비상 알람, 공정 페이지, 설비 데이터 수집·DB 저장</summary>
-
-  - **역할:** Frontend / DB / MQTT 데이터 수집 담당  
-
-  - **내용:** 스마트팩토리 환경에서 설비·공정·환경 데이터를 통합 모니터링하는 SCADA 기반 관제 시스템 개발  
-    - **Frontend 구현:** Vue 3 기반 화면 구현 및 전체 페이지 UI 시인성 개선  
-    - **로그인 / 회원가입:** 사용자 로그인, 회원가입, 인증 관련 화면 구성  
-    - **사용자 관리:** 관리자 관점의 사용자 목록 조회, 계정 상태 및 역할 관리 화면 구현  
-    - **비상 알람:** 설비 이상 상황을 빠르게 확인할 수 있는 비상 알람 UI 구성  
-    - **공정 페이지:** 공정별 설비 상태를 확인할 수 있는 모니터링 화면 구현  
-    - **데이터 수집:** Python으로 MQTT 기반 설비 데이터 발행 구조 구축  
-    - **데이터 연동:** Node-RED에서 MQTT 데이터를 수신하고 MySQL DB에 저장하는 흐름 구현  
-    - **협업:** FE 협업 세팅 가이드 작성, 브랜치 전략 및 PR 기반 협업 참여  
-
-  - **기술:** Vue 3, Pinia, Vue Router, Axios, Tailwind CSS, ECharts, Python, MQTT, Node-RED, MySQL, GitHub  
-
-  - **성과:**  
-    - 설비 데이터 생성 → MQTT 송신 → Node-RED 수신 → DB 저장 → Frontend 시각화로 이어지는 데이터 흐름 경험  
-    - 로그인, 회원가입, 사용자 관리, 비상 알람, 공정 모니터링 등 관제 시스템 주요 화면 구현  
-    - 단순 화면 구현을 넘어 데이터 수집·저장·조회·시각화 흐름을 함께 이해하며 Frontend 개발 진행  
-    - FE 개발 환경과 협업 규칙을 정리하여 팀 개발 효율 개선  
-
-  </details>
-
-- [🏭 **AMHS(Automated Material Handling System) 모니터링 및 관리 시스템 – 스마트팩토리 프로젝 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
-  <details>
-  <summary>👉FE2 프론트엔드 개발 → 장비 목록, 알림 이력, 로그인, 정비 관리, 임계값 설정, 추적 분석 페이지 중심 구현</summary>
-
-  - **역할:** FE2 프론트엔드 개발  
-  - **내용:** 반도체/스마트팩토리 환경의 AMHS(Automated Material Handling System)에서 사용되는 OHT, AGV 등 물류 장비의 상태를 모니터링하고 관리할 수 있는 웹 기반 프론트엔드 시스템 개발  
-    - **담당 페이지 구현:** 장비 목록(SC-03), 알림 이력(SC-04), 로그인(SC-05), 정비 목록(SC-06), 정비 상세(SC-07), 임계값 설정(SC-08), 장비 추적 분석(SC-10) 페이지를 담당하여 사용자 흐름에 맞는 화면 구조와 기능 구현  
-    - **세부 화면 구성:** 장비 상태 배지, 테이블 기반 목록 UI, 알림 히스토리 탭, 정비 상태 전이, 관리자용 임계값 설정, 추적 분석 차트 등 실제 운영 화면 중심으로 구현  
-    - **공통 컴포넌트 및 구조 설계:** AppLayout, StatusBadge, DataTable, FilterBar, alertStore, authStore, router 구조를 담당하며 재사용 가능한 UI와 공통 구조를 설계  
-    - **상태관리 및 인증 처리:** Pinia를 활용해 로그인 상태, 사용자 역할, 알림 데이터, 화면 상태를 관리하고 라우트 가드 및 역할(Role) 기반 메뉴 분기 적용  
-    - **실시간 알림 기능 구현:** STOMP + SockJS 기반 WebSocket 구조를 적용해 서버 알림 토픽을 구독하고, 수신 메시지를 alertStore와 Toast UI에 반영하여 미확인 알림 개수와 실시간 알림 표시 구현  
-    - **차트 및 데이터 시각화:** ECharts를 활용해 장비 추적 분석, 센서 데이터, 통계성 화면을 시각화하고 데이터 흐름에 맞춰 mock 기반 개발 후 API 연동 구조로 확장  
-    - **API 연동:** Axios와 JWT 인터셉터를 적용해 로그인, 장비 조회, 알림 이력, 정비 데이터, 임계값 설정 등 인증이 필요한 요청을 처리할 수 있도록 구성  
-  - **기술:** Vue 3, Vite, Pinia, Vue Router, Axios, ECharts, STOMP, SockJS, CSS Variables, Composable Pattern, Docker, Nginx  
-  - **성과:**  
-    - AMHS 운영에 필요한 장비 조회, 알림 확인, 정비 관리, 분석 기능을 웹 UI로 구현하며 **스마트팩토리 프론트엔드 실무 흐름 경험**  
-    - FE2 담당 페이지와 공통 자원을 함께 설계·구현하며 **페이지 개발뿐 아니라 구조 분리, 상태관리, 실시간 알림 연동까지 경험**
-
-  </details>
 
 - [🌐 **INU 정보기술대 전용 SNS – ESC 소모임 (ESC Club, 2024.09~2025.01)** ](https://github.com/ESCSNSN/Front-end) 
     <details>
