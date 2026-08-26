@@ -320,21 +320,29 @@
   
 - [📡 **METLAB 연구 체험 프로그램 대회 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
   <details>
-    <summary>👉연구 팀장 -> ESP32-CAM CSI + 영상 데이터 융합 → 자율주행자동차 악천후 인식 정확도 개선 / 총장상 수상 </summary>
+    <summary>👉연구 팀장 -> ESP32-CAM CSI → 자율주행자동차 악천후 인식 정확도 개선 / 총장상 수상 </summary>
   
   - **역할:** 연구 팀장
   - **주제:** 악천후 상황에서 자율주행 인식 정확도 개선
   - **내용:**  
     - 자율주행 차량이 악천후(비, 안개, 눈 등) 상황에서 카메라 기반 인식 정확도가 급격히 저하되는 문제에 주목  
-    - ESP32-CAM을 활용해 **영상 데이터**와 동시에 **Wi-Fi CSI(Channel State Information) 신호**를 수집하여, 시각·무선 채널 특성을 결합한 멀티모달 데이터셋 구축  
-    - 수집된 데이터를 전처리(결측치 제거, Normalization, 특징 선택) 후 **랜덤포레스트(Random Forest) 모델**을 적용하여, 악천후 환경에서의 객체 인식 성능을 비교·평가
-  - **기술 스택:** ESP-IDF, ESP-CSI 라이브러리, Python(pandas, scikit-learn), Random Forest 모델, 데이터 전처리/분석
+    - ESP32을 활용해 **Wi-Fi CSI(Ch- [📡 **METLAB 연구 체험 프로그램 대회 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
+  <details>
+    <summary>👉연구 팀장 → ESP32-CAM CSI 기반 환경 상태 분류 / 총장상 수상</summary>
+  
+  - **역할:** 연구 팀장
+  - **주제:** Wi-Fi CSI 데이터를 활용한 환경 상태 인식
+  - **내용:**  
+    - 카메라 기반 자율주행 인식이 악천후 환경에서 성능이 저하될 수 있다는 문제에 주목  
+    - 두 대의 ESP32-CAM을 활용해 **Wi-Fi CSI(Channel State Information) 데이터**를 수집하고, **사람 없음 / 좌측 / 중앙 / 우측**의 4가지 상황별 데이터셋 구축  
+    - 수집된 CSI 데이터를 전처리한 뒤 **Random Forest 모델**을 적용하여 환경 상태를 분류하고 성능을 평가
+  - **기술 스택:** ESP-IDF, ESP-CSI 라이브러리, Python(pandas, scikit-learn), Random Forest, 데이터 전처리/분석
   - **성과:**  
-    - 단일 영상 데이터 대비 멀티모달 데이터(영상 + CSI) 기반 모델이 **안개·우천 상황에서 인식 정확도가 유의미하게 향상됨**을 검증  
-    - **ESP32-CAM + Wi-Fi CSI**를 결합한 저비용·저전력형 센서 융합 방식의 가능성을 확인  
+    - Wi-Fi CSI 데이터를 활용해 **4가지 환경 상태를 90% 이상의 정확도로 분류**
+    - 무선 신호 기반으로 주변 환경 상태를 구분할 수 있음을 확인하여, **카메라 기반 인식을 보완할 수 있는 보조 센서로서의 활용 가능성** 확인
     - 인천대학교 정보기술대학 **연구 체험 활동 총장상 수상**
-
   </details>
+  
 - [⚙️ **STM32 실시간 제어 프로젝트 (2024.05 ~ 2024.06)**](https://github.com/psy1218/Embedded_SW_project)  
   <details>
     <summary>👉적외선 센서·서보모터·7-Segment를 로우레벨 레지스터로 제어 포함한 실시간 반응형 제어 시스템</summary>
