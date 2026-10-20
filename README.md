@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=🚙%20Soyun%20Park%20🤖&fontSize=40)
 👋 Hi, I'm Soyun Park  
 🎓 INU Embedded Systems Engineering  
-🔧 Experienced in Embedded Systems, AI Vision, and IoT, applying real-time sensor fusion to safety and mobility projects.
+🔧 Embedded SW · MCU Control · MATLAB/Simulink · Linux Systems · AI/IoT
 
 
 ---
@@ -66,133 +66,76 @@
 ---
 # 📑 Summary of Activities
 
+> **Main interests:** Embedded C / MCU Firmware · Control Algorithms & MBD · Embedded Linux / System Programming
+>
+> **Selected code:** [STM32 register-level control](https://github.com/psy1218/Embedded_SW_project) · [MATLAB/Simulink autonomous driving](https://github.com/jjong102/Third_Impact) · [Semi-autonomous walker](https://github.com/Capstone-A-Sharp) · [C/POSIX SSD Test Shell](https://github.com/psy1218/SSD-Test-shell-PJT)
+
+
 
 ### 🔹 Smart Factory Projects
 
 - [🚙 **HMGICS 파이널 공정 디지털 트윈 – Unreal Engine 프로젝트 (2026.06)**](https://github.com/SF-KONA/DT_Unreal)
   <details>
-  <summary>👉 Unreal Engine 공장 환경 구성 / 차량 팝업 UI 구현 → 시트·휠·타이어 공정 환경과 공정 상태 표시 기능 구현</summary>
+  <summary>👉 Unreal Engine 공장 환경 및 Blueprint 기반 차량 정보 팝업 UI 구현</summary>
 
-  - **역할:** Unreal Engine 공장 배경 구성 / Blueprint 기반 차량 정보 UI 구현
-
-  - **내용:** HMGICS의 자동차 파이널 공정을 참고하여, Unreal Engine 기반 스마트팩토리 디지털 트윈 환경의 공장 배경과 차량 정보 확인 기능을 구현  
-    - **공장 배경 구성:** 파이널 공정 환경을 표현하기 위해 공장 전체 배경, 바닥, 벽, 천장 분위기 구성  
-    - **조명 구성:** 공장 내부가 실제 생산 환경처럼 보이도록 조명 배치 및 밝기 조정  
-    - **기둥 및 구조물 구성:** 공장 공간감을 표현하기 위한 기둥, 프레임, 기본 구조물 배치  
-    - **라인 시각화:** 차량 이동 흐름과 공장 동선을 구분할 수 있도록 바닥 라인 및 색상 적용  
-    - **머티리얼 적용:** 바닥, 라인, 공장 구조물에 머티리얼을 적용하여 공장 환경의 시각적 완성도 개선  
-    - **차량 정보 팝업 구현:** 차량 클릭 시 현재 공정 정보와 상태를 확인할 수 있는 UI 팝업 구현  
-    - **공정 상태 표시:** 차량의 현재 공정, 공정 상태, 진행 현황 등을 팝업창에 표시하도록 구성  
-    - **Blueprint 활용:** 차량 클릭 이벤트, 위젯 생성, UI 표시 및 제거 흐름을 Blueprint로 구현  
-  
-  - **기술:** Unreal Engine, Blueprint, UMG Widget, Level Design, Material, GitHub
-  
-  - **성과:**
-    - HMGICS 파이널 공정 컨셉을 참고하여 Unreal Engine 기반 공장 배경 구현  
-    - 조명, 기둥, 바닥 라인, 머티리얼을 활용해 스마트팩토리 환경의 시각적 완성도 개선  
-    - 차량 클릭 시 공정 상황과 상태를 확인할 수 있는 차량 정보 팝업 UI 구현  
-    - 단순 배경 제작에 그치지 않고, 차량 상태 정보를 확인할 수 있는 인터랙션 기능까지 연결  
+  - **역할:** 공장 배경·조명 구성 및 차량 클릭 이벤트/정보 UI 개발
+  - **주요 구현:**
+    - 현대차그룹 싱가포르 글로벌 혁신센터(HMGICS)의 파이널 공정을 참고한 시트·휠·타이어 작업 구역과 공장 배경 구성
+    - 바닥 라인, 기둥, 벽·천장, 조명 및 머티리얼 배치로 공장 공간과 차량 이동 흐름 표현
+    - Blueprint·UMG Widget으로 차량 클릭 시 공정 정보와 진행 상태를 표시하는 팝업 구현
+  - **기술:** Unreal Engine, Blueprint, UMG, Level Design
+  - **결과:** 공정 환경 표현과 차량 정보 확인 기능이 결합된 디지털 트윈 시연 화면 구현
 
   </details>
 
-- [📊 **설비·환경 통합 관제 시스템 – SCADA 프로젝트 (2026.05)**](https://github.com/SF-KONA/SCADA-frontend)  
+- [📊 **설비·환경 통합 관제 시스템 – SCADA 프로젝트 (2026.05)**](https://github.com/SF-KONA/SCADA-frontend)
   <details>
-  <summary>👉 Frontend / DB / MQTT 데이터 수집 담당 → 로그인·회원가입, 사용자 관리, 비상 알람, 공정 페이지, 설비 데이터 수집·DB 저장</summary>
+  <summary>👉 Vue 관제 UI 개발 및 MQTT → Node-RED → MySQL 설비 데이터 연동</summary>
 
-  - **역할:** Frontend / DB / MQTT 데이터 수집 담당  
-
-  - **내용:** 스마트팩토리 환경에서 설비·공정·환경 데이터를 통합 모니터링하는 SCADA 기반 관제 시스템 개발  
-    - **Frontend 구현:** Vue 3 기반 화면 구현 및 전체 페이지 UI 시인성 개선  
-    - **로그인 / 회원가입:** 사용자 로그인, 회원가입, 인증 관련 화면 구성  
-    - **사용자 관리:** 관리자 관점의 사용자 목록 조회, 계정 상태 및 역할 관리 화면 구현  
-    - **비상 알람:** 설비 이상 상황을 빠르게 확인할 수 있는 비상 알람 UI 구성  
-    - **공정 페이지:** 공정별 설비 상태를 확인할 수 있는 모니터링 화면 구현  
-    - **데이터 수집:** Python으로 MQTT 기반 설비 데이터 발행 구조 구축  
-    - **데이터 연동:** Node-RED에서 MQTT 데이터를 수신하고 MySQL DB에 저장하는 흐름 구현  
-    - **협업:** FE 협업 세팅 가이드 작성, 브랜치 전략 및 PR 기반 협업 참여  
-
-  - **기술:** Vue 3, Pinia, Vue Router, Axios, Tailwind CSS, ECharts, Python, MQTT, Node-RED, MySQL, GitHub  
-
-  - **성과:**  
-    - 설비 데이터 생성 → MQTT 송신 → Node-RED 수신 → DB 저장 → Frontend 시각화로 이어지는 데이터 흐름 경험  
-    - 로그인, 회원가입, 사용자 관리, 비상 알람, 공정 모니터링 등 관제 시스템 주요 화면 구현  
-    - 단순 화면 구현을 넘어 데이터 수집·저장·조회·시각화 흐름을 함께 이해하며 Frontend 개발 진행  
-    - FE 개발 환경과 협업 규칙을 정리하여 팀 개발 효율 개선  
+  - **역할:** 프론트엔드, 설비 데이터 발행·저장 경로 연동
+  - **주요 구현:**
+    - Vue 3 기반 로그인·회원가입·사용자 관리·비상 알람·공정별 모니터링 화면 개발
+    - Python MQTT 데이터 발행과 Node-RED 수신·MySQL 저장 흐름 연동
+    - 화면에서 요구하는 설비·공정 정보와 수집 데이터 구조를 맞춰 데이터 전달 흐름 확인
+    - Git 브랜치·PR 기반 협업 및 프론트엔드 개발 환경 가이드 공유
+  - **개발 방식:** Codex를 이용해 저장소 분석·코드 탐색·반복 수정 업무를 보조하고, 연동 결과는 화면·DB·로그로 직접 점검
+  - **기술:** Vue 3, Python, MQTT, Node-RED, MySQL, Git
+  - **결과:** 설비 데이터의 발행–수신–저장과 관제 화면을 연결하는 통합 개발 경험
 
   </details>
 
-- [🏭 **AMHS(Automated Material Handling System) 모니터링 및 관리 시스템 – 스마트팩토리 프로젝 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
+- [🏭 **AMHS 모니터링 및 관리 시스템 – 스마트팩토리 프로젝트 (2026.04)**](https://github.com/SF-KONA/AMHS-frontend/tree/develop)
   <details>
-  <summary>👉FE2 프론트엔드 개발 → 장비 목록, 알림 이력, 로그인, 정비 관리, 임계값 설정, 추적 분석 페이지 중심 구현</summary>
+  <summary>👉 Vue 3 기반 알림·정비·장비 추적 UI, 상태 관리 및 실시간 알림 연동</summary>
 
-  - **역할:** FE2 프론트엔드 개발  
-  - **내용:** 반도체/스마트팩토리 환경의 AMHS(Automated Material Handling System)에서 사용되는 OHT, AGV 등 물류 장비의 상태를 모니터링하고 관리할 수 있는 웹 기반 프론트엔드 시스템 개발  
-    - **담당 페이지 구현:** 장비 목록(SC-03), 알림 이력(SC-04), 로그인(SC-05), 정비 목록(SC-06), 정비 상세(SC-07), 임계값 설정(SC-08), 장비 추적 분석(SC-10) 페이지를 담당하여 사용자 흐름에 맞는 화면 구조와 기능 구현  
-    - **세부 화면 구성:** 장비 상태 배지, 테이블 기반 목록 UI, 알림 히스토리 탭, 정비 상태 전이, 관리자용 임계값 설정, 추적 분석 차트 등 실제 운영 화면 중심으로 구현  
-    - **공통 컴포넌트 및 구조 설계:** AppLayout, StatusBadge, DataTable, FilterBar, alertStore, authStore, router 구조를 담당하며 재사용 가능한 UI와 공통 구조를 설계  
-    - **상태관리 및 인증 처리:** Pinia를 활용해 로그인 상태, 사용자 역할, 알림 데이터, 화면 상태를 관리하고 라우트 가드 및 역할(Role) 기반 메뉴 분기 적용  
-    - **실시간 알림 기능 구현:** STOMP + SockJS 기반 WebSocket 구조를 적용해 서버 알림 토픽을 구독하고, 수신 메시지를 alertStore와 Toast UI에 반영하여 미확인 알림 개수와 실시간 알림 표시 구현  
-    - **차트 및 데이터 시각화:** ECharts를 활용해 장비 추적 분석, 센서 데이터, 통계성 화면을 시각화하고 데이터 흐름에 맞춰 mock 기반 개발 후 API 연동 구조로 확장  
-    - **API 연동:** Axios와 JWT 인터셉터를 적용해 로그인, 장비 조회, 알림 이력, 정비 데이터, 임계값 설정 등 인증이 필요한 요청을 처리할 수 있도록 구성  
-  - **기술:** Vue 3, Vite, Pinia, Vue Router, Axios, ECharts, STOMP, SockJS, CSS Variables, Composable Pattern, Docker, Nginx  
-  - **성과:**  
-    - AMHS 운영에 필요한 장비 조회, 알림 확인, 정비 관리, 분석 기능을 웹 UI로 구현하며 **스마트팩토리 프론트엔드 실무 흐름 경험**  
-    - FE2 담당 페이지와 공통 자원을 함께 설계·구현하며 **페이지 개발뿐 아니라 구조 분리, 상태관리, 실시간 알림 연동까지 경험**
+  - **역할:** 프론트엔드(FE2) — 장비 목록, 알림 이력, 로그인, 정비 관리, 임계값 설정, 추적 분석 화면
+  - **주요 구현:**
+    - Vue 3·Pinia 기반 공통 컴포넌트, 라우팅 및 화면 상태 관리
+    - 로그인·역할 기반 메뉴/라우트 분기와 Axios API 요청 처리
+    - STOMP·SockJS를 활용한 실시간 알림 수신, 알림 상태 관리 및 Toast 표시
+    - ECharts 기반 추적 분석·상태 데이터 시각화, Mock 데이터 기반 개발 이후 API 연결
+    - 장비 정비 상태·알림 이력·임계값 설정 등 운영자 기능 구현
+  - **개발 방식:** 요구사항·데이터 흐름·제약조건을 정리해 Codex에 파일 탐색·코드 수정·리팩터링을 맡기고, 최종 API 응답·화면 동작·로그 직접 확인
+  - **기술:** Vue 3, Pinia, Axios, ECharts, STOMP, SockJS, JWT, Git
+  - **결과:** 장비 운영 기능과 실시간 데이터 표시를 통합한 웹 관제 UI 개발
 
   </details>
-- [🏭 **현대오토에버 스마트팩토리 부트캠프 머신비전 프로젝트 (2026.03)**](https://github.com/psy1218/HYUNDAI_AUTOEVER_BOOTCAMP_Machine_Vision_Projectz)  
+
+- [🏭 **현대오토에버 스마트팩토리 머신비전 프로젝트 (2026.03)**](https://github.com/psy1218/HYUNDAI_AUTOEVER_BOOTCAMP_Machine_Vision_Projectz)
   <details>
-  <summary>👉 머신비전 기반 프로젝트 2종: 실내 AR 네비게이션 시스템 / 스마트 팩토리 박스 품질 검사 및 분류 시스템</summary>
+  <summary>👉 실내 영상 기반 길안내 및 AI 판정–MQTT–ESP32 자동분류 시스템</summary>
 
-  ## 🧭 실내 AR 네비게이션 시스템
+  **① 실내 AR 내비게이션 시스템**
+  - **프로젝트:** 카메라 영상의 위치·방향 인식 결과를 직진·좌회전·우회전·후진 안내로 변환하는 프로토타입
+  - **구현:** 데이터셋 구성, 이미지 분류 결과와 경로 안내 로직 연동, 화면 UI 및 통합
+  - **기술:** Python, PyTorch, OpenCV, Flask
 
-  - **역할:**  
-    전체 프로젝트 기획, 데이터셋 구성, 이미지 분류 모델 적용, 경로 안내 로직 구현, UI/UX 설계 및 시스템 통합 담당
-
-  - **내용:**  
-    - 실내 공간에서는 GPS 기반 길안내가 어렵다는 점에 착안하여, **카메라 입력 영상으로 현재 위치와 방향을 인식**하고 목적지까지의 이동 방향을 실시간으로 안내하는 시스템 구현  
-    - 단순히 위치를 분류하는 데 그치지 않고, 사용자가 즉시 이해할 수 있도록 **직진 / 좌회전 / 우회전 / 후진**과 같은 행동 중심 명령으로 변환하는 로직 설계  
-    - 목적지 선택 → 현재 화면 입력 → 방향 예측 → 경로 계산 → UI 반영의 흐름으로 구성하여, **머신비전 결과를 실제 사용자 행동으로 연결**  
-    - 시연 과정에서 사용자가 직관적으로 반응할 수 있도록 큰 방향 표시, 시각적 피드백 등 **UI/UX 요소를 함께 설계**
-
-  - **기술:**  
-    - **Python**  
-    - **PyTorch**  
-    - **OpenCV / NumPy**  
-    - **Flask / REST API**  
-    - **HTML / CSS / JavaScript**
-
-  - **성과:**  
-    - 실내 이미지 기반으로 현재 위치/방향을 인식하고 목적지까지의 이동 방향을 안내하는 **AR 네비게이션 프로토타입 구현**  
-    - 머신비전 결과를 그대로 보여주는 것이 아니라, **사용자가 바로 행동할 수 있는 명령으로 변환하는 UX 중심 설계 경험 확보**  
-    - 입력–추론–경로 계산–UI 반영까지 이어지는 **end-to-end 시스템 통합 경험 축적**
-
-  ---
-
-  ## 📦 스마트 팩토리 박스 품질 검사 및 분류 시스템
-
-  - **역할:**  
-    전체 시스템 기획, 비전 추론 흐름 설계, 세션 기반 최종 판정 로직 구현, MQTT 통신 구조 설계, ESP32 모터/서보 제어 및 시연 통합 담당
-
-  - **내용:**  
-    - 제조 현장에서 박스 외관의 찢김, 구멍, 개봉 상태 등의 이상 여부를 **머신비전으로 판별**하고, 결과에 따라 자동 분류되도록 설계한 스마트 팩토리 시스템 구현  
-    - 단일 프레임 결과에 바로 의존하지 않고, 박스가 카메라 시야에 들어온 순간부터 벗어날 때까지를 하나의 **검사 세션(session)** 으로 관리하여 최종 상태를 판정  
-    - 프레임별 예측값을 누적해 `NORMAL`, `DEFECTIVE`, `RECHECK` 상태를 결정함으로써, **일시적인 오검출이나 흔들림에 강한 판정 로직** 설계  
-    - 최종 검사 결과를 **MQTT로 ESP32에 전송**하고, ESP32가 이를 바탕으로 컨베이어와 서보모터를 제어해 상태별로 자동 분류하도록 구현  
-    - **카메라 → 비전 추론 → 상태 판단 → MQTT 전송 → ESP32 제어 → 물리적 분류**까지 이어지는 스마트 팩토리형 end-to-end 흐름 구성
-
-  - **기술:**  
-    - **Python**  
-    - **YOLO / PyTorch**  
-    - **OpenCV / NumPy**  
-    - **MQTT / PubSubClient**  
-    - **ESP32 / Arduino IDE / ESP32Servo**  
-    - **DC Motor / L298N / Servo Motor**
-
-  - **성과:**  
-    - 박스 품질 검사 결과를 실제 하드웨어 제어와 연결해, **정상 / 불량 / 재검사 자동 분류 프로토타입 구현**  
-    - 단순 결함 검출 모델이 아니라, **AI 판정이 실제 공정 동작으로 이어지는 자동화 시스템**을 설계·구현한 경험 확보  
-    - 비전, 통신, 임베디드 제어를 통합해 **현장형 스마트 팩토리 시스템 관점의 문제 해결 경험** 축적
+  **② 박스 품질검사 및 자동분류 시스템**
+  - **프로젝트:** YOLO 기반 박스 외관 판정 결과를 MQTT로 전달해 ESP32가 컨베이어·서보모터를 구동하는 자동분류 시스템
+  - **구현:** 카메라 입력 → 프레임별 예측 → 검사 세션별 상태 판단 → MQTT 메시지 → 모터·서보 제어 흐름 통합
+  - **문제 대응:** 여러 프레임에서 반복 발생하는 명령과 구동 중 명령 중복을 구분하고, 메시지·모터 동작 및 전원 조건을 점검
+  - **기술:** Python, YOLO, OpenCV, MQTT, ESP32, DC Motor, Servo Motor
+  - **결과:** `NORMAL`·`DEFECTIVE`·`RECHECK` 판정에 따른 분류 프로토타입 구현
 
   </details>
 
@@ -200,42 +143,58 @@
 
 ### 🔹 Embedded / AI Projects
 
-
-- [🚙 **자율주행 시뮬레이션 대회 금상( 2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
+- [💾 **C·POSIX 기반 Virtual SSD & Test Shell (2026.10, SSAFY 교육 실습 기반 확장)**](https://github.com/psy1218/SSD-Test-shell-PJT)
   <details>
-    <summary>👉 MATLAB/Simulink 기반 자율주행 시뮬레이션 - 대한전기학회 자율주행경진대회</summary>
-  
-  - **역할:** 시스템 설계 및 시뮬레이션 구현  
-  - **내용:**  
-    - RoadRunner + Simulink를 활용해 자율주행 차량의 차선 유지, 차선 변경, 장애물 회피, Cut-in 대응 시나리오를 시뮬레이션  
-    - Vision Sensor, Radar, LiDAR 등 가상 센서를 구성하고, PID 제어 및 경로 Planner 로직을 설계  
-    - 다양한 주행 환경(직선, 곡선, 장애물, 돌발 상황)에서 인식 및 제어 성능 검증  
-  - **기술:** MATLAB, Simulink, RoadRunner, Automated Driving Toolbox, Navigation Toolbox  
-  
+  <summary>👉 Linux C11 기반 가상 SSD, 독립 Test Shell, Reference Model·결함 주입·회귀 검증 자동화</summary>
+
+  - **구현:**
+    - 100개 LBA(각 32비트)의 읽기·쓰기, 영속성, 유효성 검사 및 오류 처리
+    - 파일에 Little Endian 바이너리로 저장하고 `fsync`·임시 파일 교체를 활용해 갱신
+    - `fork`·`execv`·`waitpid`로 SSD 실행 프로그램과 Test Shell을 별도 프로세스로 분리
+    - `expected[100]` 독립 Reference Model을 이용해 출력값을 비교하는 자동 테스트 작성
+    - LBA 99 쓰기 누락·Overwrite 무시 결함을 주입해 검출 및 정상 회귀를 확인
+    - Makefile·Shell Script·GitHub Actions 기반 품질 게이트 구성
+  - **기술:** C11, POSIX, Linux, GNU Make, Shell Script, GitHub Actions, ASan/UBSan
+  - **결과(README 기록):** 일반 테스트 42/42, Oracle 시나리오 9/9, 결함 검출·회귀 7/7 통과
+  - **범위:** 실제 SSD/NVMe 펌웨어가 아닌 파일 기반 시뮬레이터
+
   </details>
 
-- [🚗 **Is Not Break Down(2025.07 ~ 2025.09)**](https://github.com/brake-down)  
+
+- [🚙 **MATLAB/Simulink 자율주행 시뮬레이션 – 금상 (2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
   <details>
-    <summary>👉멀티모달 AI 시스템 (영상·음성·OBD-II) → 실시간 경고 & 운전자 안전성 확보</summary>
-  
-  - **역할:** 메인 개발자
-  - **내용:** 운전자의 급발진 및 페달 오조작 상황을 조기에 감지하는 멀티모달 AI 기반 시스템  
-    - **입력:**  
-      - 얼굴 표정(FER, IMX500) → 놀람·분노 감정 탐지  
-      - 음성(openSMILE) → 긴장·당황 발화 패턴 분석  
-      - 차량 센서(OBD-II) → 속도, RPM, 스로틀, 브레이크 신호 실시간 수집  
-    - **구조:**  
-      - Producer-Consumer 아키텍처 기반 멀티스레드 처리  
-      - 영상/음성/센서 데이터를 동기화하여 융합(Fusion)  
-      - 이상 상황 발생 시 **실시간 경고 판단 및 UI 표시**
-  - **기술:** Raspberry Pi 5, TensorFlow Lite (FER 모델), openSMILE, Python 멀티스레딩, OBD-II 시리얼 통신
-  - **성과:**  
-    - **실시간 경고 시스템 구현**: UI에 Alert 아이콘 전환 + 이벤트 로깅  
-    - **안정성 기능 추가**: 쿨다운 타이머, persist_min_frames 로직 적용 → 오탐률 감소  
-    - **의의:** 멀티모달 데이터 융합(AI + 센서)을 통한 운전자 안전성 확보 가능성 검증 
-  
+  <summary>👉 RoadRunner–Simulink 연동, Pure Pursuit, 차선 변경·복귀 및 속도 제어 로직 직접 구현</summary>
+
+  - **개발 방식:** 팀원 각자가 제어 알고리즘을 구현한 뒤 구현 방식·주행 결과를 공유하며 개선
+  - **직접 구현:**
+    - RoadRunner와 MATLAB/Simulink 연동 환경에서 차량 상태를 제어 로직에 입력하고 조향·속도 명령을 차량 모델에 반영
+    - Pure Pursuit 기반 최근접 경로점·전방 목표점 선택 및 조향값 계산
+    - 조향·주행 조건을 고려한 속도 제어 로직
+    - Ego 차량과 주변 4대의 위치·차선 비교, 동일 차선 차량과 거리 20m 미만 조건에서 목표 차선 전환
+    - 약 2초 판단 간격을 통한 반복 전환 억제와 차선별 참조 경로 선택
+  - **시험 및 한계:**
+    - 차선 변경 5회 중 4회 성공; 복귀 구간 1회에서 과도한 조향(오버슈트) 관찰
+    - 복귀 시 참조 경로 전환·Lookahead 선택·차량 모델 응답을 중심으로 원인을 분석하고 후속 개선 과제 정리
+  - **기술:** MATLAB, Simulink, RoadRunner, Pure Pursuit, Closed-Loop Co-Simulation
+  - **성과:** 팀 경진대회 금상(매스웍스코리아상)
+
   </details>
-  
+
+- [🚗 **Is Not Break Down – 페달 오조작 판단 시스템 (2025.07 ~ 2025.09)**](https://github.com/brake-down)
+  <details>
+  <summary>👉 Raspberry Pi 5에서 영상·음성·OBD-II 신호를 통합하는 실시간 경고 판단 시스템</summary>
+
+  - **역할:** Raspberry Pi 5 카메라·오디오 환경 구성, 기능 모듈화, 입력 통합 및 경고 판단 흐름 개발
+  - **주요 구현:**
+    - 영상·음성·OBD-II 신호를 서로 다른 작업 흐름에서 처리하고 Python `Queue`로 결과 전달
+    - 팀원별 기능 개발 전 더미 데이터를 이용해 통합 판단 구조를 선제 구현
+    - 누적 조건과 쿨다운을 적용한 `OK`·`WARNING`·`ALERT` 상태 전환 및 UI 이벤트 기록
+    - 녹음 파일 기반 입력에서 실제 마이크·openSMILE 기반 처리로 확장하며 실행 환경 점검
+  - **문제 대응:** 입력별 갱신 시점 차이와 통합 시점의 의존성을 줄이기 위해 데이터 전달 구조를 분리
+  - **기술:** Raspberry Pi 5, Python, Threading, Queue, openSMILE, OpenCV, OBD-II
+  - **결과:** 여러 입력 결과를 결합해 경고 상태를 표시하는 프로토타입 구현(실차 안전성 인증 결과 아님)
+
+  </details>
 
 - 🐝 [**이상기온 대응 꿀벌 스마트 관리 기술 개발 (WCL-INU 연구실) (2025.01 ~ )**](https://github.com/WCL-INU/BEE_COUNT_YOLO5)
   <details>
@@ -255,48 +214,41 @@
   
   </details>
   
-- 🚙 [**RC카 기반 프로젝트 (2025.05 ~ 2025.06)**](https://github.com/psy1218/RC_Car)
+- 🚙 [**RC카 자율·수동 통합 주행 시스템 (2025.05 ~ 2025.06)**](https://github.com/psy1218/RC_Car)
   <details>
-  <summary>👉 Flask 스트리밍 + RC 신호 수신 → 자율주행 & 수동 전환</summary>
-  
-  - **역할:** 시스템 통합 개발
-  - **내용:**  
-    - Raspberry Pi 5 + Picamera2를 활용해 RC카 주행 영상을 **Flask 웹 서버**를 통해 실시간 스트리밍  
-    - OpenCV 기반 차선 인식 룰 베이스 조향 제어로 **라인트레이싱 자율주행** 구현  
-    - Radiolink AT9 조종기 & R9DS 수신기에서 PWM 신호를 받아, **수동 모드로 전환 시 RC 입력 우선 제어** 가능하도록 설계  
-    - Arduino Nano를 서브 컨트롤러로 사용해 Servo(조향) 및 ESC(모터) 제어를 안정화, Raspberry Pi와 시리얼 통신으로 통합
-  - **기술:** Raspberry Pi 5, Picamera2, Arduino Nano, Python (Flask, OpenCV), PWM 신호 처리
-  - **성과:**  
-    - **자율주행 ↔ 수동 전환 모드**를 실시간으로 스위칭 가능  
-    - **긴급사출(Emergency Kill Switch)** 기능을 구현해 안전성 확보  
-    - Flask 기반 웹 인터페이스에서 주행 영상을 확인하면서 제어 가능 → **원격 관제 환경** 시연 성공  
-    - 실제 하드웨어(조종기/수신기 + RC카 플랫폼)와 소프트웨어( Flask 서버)를 통합하며 **임베디드 시스템 전주기 경험**
-  - **의의:**  
-    - 단순 라인트레이싱을 넘어, **수동/자율 주행 통합 및 안전 기능(긴급사출)** 까지 구현  
-    - 학부 수준에서 실제 차량 시스템의 **HMI(사람-기계 인터페이스)** 와 유사한 구조를 소형 RC카에 적용한 사례
+  <summary>👉 Raspberry Pi 영상 기반 자율주행과 RC 조종 입력 기반 수동 제어권 전환</summary>
 
-  
+  - **주요 구현:**
+    - Raspberry Pi 5·Picamera2에서 실시간 프레임을 받아 OpenCV 차선 인식 및 조향 판단
+    - Flask 기반 주행 영상 스트리밍과 원격 모니터링 기능
+    - Radiolink 조종기·수신기의 PWM 신호로 수동 조향/구동 명령 수신
+    - Raspberry Pi–Arduino Nano 연동으로 서보·ESC 제어, 자율/수동 모드 전환과 긴급 정지 기능 구성
+  - **기술:** Raspberry Pi 5, Python, OpenCV, Flask, Arduino Nano, PWM, Serial
+  - **결과:** 카메라 자율주행·수동 조작·제어권 전환을 하나의 RC카 시스템에 통합
+
   </details>
-  
-- [🦽 **핸들 압력 패턴 기반 반자율주행 보행기 (2024.09 ~ 2025.05)**](https://github.com/Capstone-A-Sharp)  
+
+- [🦽 **핸들 압력 기반 반자율주행 보행 보조 시스템 (2024.09 ~ 2025.05)**](https://github.com/Capstone-A-Sharp)
   <details>
-    <summary>👉FSR 압력센서 + 자이로센서 + 모터 제어 → 반자율주행 보행기 / 우수상 수상, 논문 2편 발표</summary>
-  
-  - **역할:** 임베디드 개발자
-  - **내용:** 노약자를 위한 보행 보조기 제작  
-    - 캡스톤: 핸들 압력 패턴 기반 반자율주행 보행기
-    - 창업지원단: 사용자 맞춤형 보행 보조기 제작
-  - **기술:**  
-    - **하드웨어:** FSR 매트릭스 압력센서(핸들 압력 감지), 자이로센서(오르막·내리막 판별), DC 모터 + 드라이버  
-    - **소프트웨어:** 모터 제어 코드 구현 및 각 모듈 통합(Combine), Raspberry Pi 5 ↔ Arduino 간 시리얼 통신  
-    - **시스템 통합:** 센서 데이터 → 제어 알고리즘 적용 → 보행 보조기 구동까지 end-to-end 구현
-  - **성과:**  
-    - 캡스톤 디자인 완성 / 창업지원단 동아리 *우수상 수상*  
-    - 관련 연구 성과를 **학술 논문 2편으로 발표**
-      - [마이크로컨트롤러 GPIO의 효율적 사용을 위한 클럭 시그널 기반 압력센서 어레이 회로 구성](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331462)  
-      - [고정형 핸들 압력센서 입력을 활용한 사용자 의도 인식 기반 이동장치 아키텍처 설계](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE12288688)
+  <summary>👉 512개 FSR 압력 포인트와 MCU–SBC 연동을 통한 사용자 의도 기반 모터 제어</summary>
+
+  - **역할:** 팀 임베디드 제어·시스템 통합 참여, 주행속도 및 손잡이 해제 정지 시험 담당
+  - **시스템 구성:**
+    - 16×16 FSR 압력센서 어레이 2개(총 512포인트), 자이로·홀센서로 입력 수집
+    - Raspberry Pi 5에서 상위 연산, Arduino Nano에서 센서 입력·PWM 기반 모터 제어 수행
+    - 두 장치를 시리얼 통신으로 연결하고 수동·반자율 모드 전환 및 긴급정지 기능 구성
+    - 압력 입력 범위에 따른 감속·속도 유지·가속 제어 로직 통합(팀 구현 내용 포함)
+  - **직접 수행한 시험:**
+    - 1·2·3km/h 목표속도에서 홀센서 기반 속도 확인; 5회 중 4회 목표 대비 ±3% 이내
+    - 손잡이 해제 후 0.1초 이내 정지 동작 확인
+  - **팀 공동 활동:** 비포장 구간 포함 5km 연속주행, 사용자 평가
+  - **기술:** Arduino Nano, Raspberry Pi 5, C/C++, Python, FSR, PWM, UART/Serial
+  - **성과:** 교내 우수상 및 관련 학술 논문 2편 발표
+    - [마이크로컨트롤러 GPIO의 효율적 사용을 위한 클럭 시그널 기반 압력센서 어레이 회로 구성](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12331462)
+    - [고정형 핸들 압력센서 입력을 활용한 사용자 의도 인식 기반 이동장치 아키텍처 설계](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE12288688)
+
   </details>
-  
+
 - [🈶 **한글 문자 인식 인공신경망 (2024.10 ~ 2024.12)**](https://github.com/psy1218/Korean_Character_Recognition)
   <details>
     <summary>👉115클래스 한글 데이터셋 생성 + Forward/Backprop 직접 구현 → AI pipeline 경험 </summary>
@@ -318,62 +270,40 @@
 
   </details>
   
-- [📡 **METLAB 연구 체험 프로그램 대회 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
+- [📡 **METLAB 연구 체험 프로그램 – 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)
   <details>
-    <summary>👉연구 팀장 -> ESP32-CAM CSI → 자율주행자동차 악천후 인식 정확도 개선 / 총장상 수상 </summary>
-  
-  - **역할:** 연구 팀장
-  - **주제:** 악천후 상황에서 자율주행 인식 정확도 개선
-  - **내용:**  
-    - 자율주행 차량이 악천후(비, 안개, 눈 등) 상황에서 카메라 기반 인식 정확도가 급격히 저하되는 문제에 주목  
-    - ESP32을 활용해 **Wi-Fi CSI(Ch- [📡 **METLAB 연구 체험 프로그램 대회 최우수상 (2024.07 ~ 2024.09)**](https://github.com/psy1218/METLAB_ESP32-cam_CSI)   
-  <details>
-    <summary>👉연구 팀장 → ESP32-CAM CSI 기반 환경 상태 분류 / 총장상 수상</summary>
-  
-  - **역할:** 연구 팀장
-  - **주제:** Wi-Fi CSI 데이터를 활용한 환경 상태 인식
-  - **내용:**  
-    - 카메라 기반 자율주행 인식이 악천후 환경에서 성능이 저하될 수 있다는 문제에 주목  
-    - 두 대의 ESP32-CAM을 활용해 **Wi-Fi CSI(Channel State Information) 데이터**를 수집하고, **사람 없음 / 좌측 / 중앙 / 우측**의 4가지 상황별 데이터셋 구축  
-    - 수집된 CSI 데이터를 전처리한 뒤 **Random Forest 모델**을 적용하여 환경 상태를 분류하고 성능을 평가
-  - **기술 스택:** ESP-IDF, ESP-CSI 라이브러리, Python(pandas, scikit-learn), Random Forest, 데이터 전처리/분석
-  - **성과:**  
-    - Wi-Fi CSI 데이터를 활용해 **4가지 환경 상태를 90% 이상의 정확도로 분류**
-    - 무선 신호 기반으로 주변 환경 상태를 구분할 수 있음을 확인하여, **카메라 기반 인식을 보완할 수 있는 보조 센서로서의 활용 가능성** 확인
-    - 인천대학교 정보기술대학 **연구 체험 활동 총장상 수상**
-  </details>
-  
-- [⚙️ **STM32 실시간 제어 프로젝트 (2024.05 ~ 2024.06)**](https://github.com/psy1218/Embedded_SW_project)  
-  <details>
-    <summary>👉적외선 센서·서보모터·7-Segment를 로우레벨 레지스터로 제어 포함한 실시간 반응형 제어 시스템</summary>
-  
+  <summary>👉 ESP32-CAM Wi-Fi CSI 기반 주변 상태 분류 · 인천대학교 총장상</summary>
 
-  - **역할:** 센서 입력 처리 및 서보모터·세그먼트 제어 로직 구현 담당  
-  
-  - **내용:**  
-    - **적외선(IR) 센서**를 활용해 공이 통과하는 순간을 감지  
-    - 감지 신호를 기반으로 **서보모터**가 동작해 공을 떨어뜨리는 동작 구현  
-    - 공이 떨어질 때마다 **7-Segment 디스플레이**를 통해 카운트를 실시간 표시  
-    - 단순한 HAL 라이브러리 호출이 아니라, **레지스터 단위 설정(ADC, GPIO, Timer, PWM)** 을 통해 **Low-Level 제어**를 직접 구현  
-    - 아크릴 구조물을 활용해 **경사로 제작 및 기울기 조절** 기능 추가 → 다양한 실험 환경 구축  
-  
-  
-  - **기술:**  
-    - **STM32 마이크로컨트롤러 (C, CMSIS 기반)**  
-    - **ADC (Analog to Digital Converter)** 레지스터 직접 제어 → IR 센서 입력값 실시간 처리  
-    - **Timer & PWM 레지스터** 활용 → 서보모터 각도 제어 (하드웨어 타이밍 정확도 확보)  
-    - **GPIO Low-Level 제어** → 7-Segment 직접 구동  
-    - **실시간성 보장**: 인터럽트 기반 이벤트 처리, busy-wait 지양 → 즉각 반응 구현  
-    - **데이터시트 기반 설계**: HAL 추상화가 아닌 **레지스터 주소를 직접 매핑**하여 시스템의 동작 원리부터 튼튼하게 구축  
-    - 아크릴 기반 실험 하드웨어 제작  
-  
-  
-  - **성과:**  
-    - STM32 하드웨어 구조와 데이터시트를 깊이 이해하고, Low-Level 제어 능력 확보  
-    - 여러 센서를 동시에 다루며 **임베디드 실시간 제어 시스템 구현 경험 축적**  
-    - 단순 구현 수준을 넘어 **하드웨어 최적화 및 신뢰성 높은 동작**을 달성
-    
+  - **역할:** 연구 팀장, 센서 데이터 수집·전처리 및 모델 성능 비교
+  - **주요 구현:**
+    - ESP32-CAM 2대로 Wi-Fi CSI(Channel State Information) 데이터 수집
+    - 사람 없음·좌측·중앙·우측 4개 조건에 대한 데이터셋 구성
+    - 수집 신호 전처리 후 Random Forest를 이용한 상태 분류 모델 학습·평가
+  - **기술:** ESP-IDF, ESP-CSI, Python, pandas, scikit-learn, Random Forest
+  - **성과:** 프로젝트 기록상 4개 상태 분류 정확도 90% 이상, 연구 체험 활동 최우수상(총장상)
+  - **연구 방향:** 카메라 인식을 보완할 수 있는 Wi-Fi CSI 기반 주변 상태 인식 가능성 탐색
+
   </details>
+
+- [⚙️ **STM32 레지스터 기반 3채널 구슬 순차 분류 (2024.05 ~ 2024.06)**](https://github.com/psy1218/Embedded_SW_project)
+  <details>
+  <summary>👉 HAL 제어 함수에 의존하지 않고 RCC·GPIO·TIM3를 직접 설정한 C 기반 PWM 서보 제어</summary>
+
+  - **구분:** 개인 프로젝트
+  - **직접 구현:**
+    - 광센서 입력과 사용자 지정 순서를 연결해 3개 투입구의 목표 서보 선택
+    - STM32 RCC·GPIO·TIM3 레지스터 직접 설정, 타이머 PWM 3채널 제어
+    - `PSC=107`, `ARR=19999` 및 `CCR1~CCR3`를 활용한 PWM 주기·채널별 펄스 폭 조정
+  - **문제 해결:**
+    - 센서 인식과 서보의 개별 동작은 정상이지만 구슬이 게이트 개방 전에 지나가 분류 실패
+    - 구슬 이동시간과 서보 응답시간의 불일치를 원인으로 판단
+    - 센서 위치·투입구 간격·경사·서보 개방 각도 보정 및 반복 시험으로 순차 분류 구현
+  - **기술:** C, STM32, GPIO, TIM3, PWM, Servo Motor, Register-level Programming
+  - **결과:** 사용자가 정한 순서대로 3개 채널의 구슬을 분류하는 시스템 완성
+
+  </details>
+
+
 - [🎮 **객체지향 SW 프로젝트 (2023.10 ~ 2023.12)**](https://github.com/psy1218/Object-Oriented-Projects)  
     <details>
     <summary>👉C++ 기반으로 벽치기 게임과 A* Pathfinding 시각화를 구현, 실시간 이벤트 처리 및 알고리즘</summary>
