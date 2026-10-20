@@ -6,6 +6,22 @@
 
 ---
 
+### 🎯 Featured Projects by Role
+
+같은 프로젝트라도 **SW개발은 구현·제어 로직**, **SW검증은 시험 설계·결함 분석·자동화** 관점에서 살펴볼 수 있도록 정리했습니다. 아래 링크를 누르면 각 프로젝트의 상세 설명으로 이동합니다.
+
+| 🛠️ SW Development · 개발 | 🔍 SW Verification · 검증 |
+| :--- | :--- |
+| **1. [STM32 레지스터 기반 제어](#featured-stm32)**<br>C · RCC/GPIO/TIM3 · 3채널 PWM 및 제어 로직 | **1. [Virtual SSD & Test Shell](#featured-ssd)**<br>독립 Reference Model · Fault Injection · 자동 회귀 테스트 |
+| **2. [MATLAB/Simulink 자율주행](#featured-matlab)**<br>Pure Pursuit · 조향/속도 제어 · 차선 변경 판단 | **2. [MATLAB/Simulink 자율주행](#featured-matlab)**<br>주행 시나리오 · 차선 변경 5회 중 4회 · 복귀 오버슈트 분석 |
+| **3. [반자율주행 보행 보조 시스템](#featured-walker)**<br>센서 입력 · MCU–SBC 통신 · 모터 제어 | **3. [STM32 레지스터 기반 제어](#featured-stm32)**<br>센서·서보 개별 시험과 통합 실패 원인 분석 |
+| **4. [C/POSIX Virtual SSD](#featured-ssd)**<br>C11 · 파일 I/O · `fork/execv/waitpid` | **4. [반자율주행 보행 보조 시스템](#featured-walker)**<br>속도 오차 · 손잡이 해제 정지 · 연속주행 시험 |
+
+> 상세 프로젝트 설명과 원본 소스코드는 아래 **Summary of Activities**에서 확인할 수 있습니다. 팀 프로젝트에서는 직접 구현한 범위와 공동 성과를 구분해 기재했습니다.
+
+---
+
+<br>
 <br>
 
 ## 🔹 Skills
