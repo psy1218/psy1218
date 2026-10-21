@@ -177,24 +177,40 @@
   </details>
 
 
-- [🚙 **MATLAB/Simulink 자율주행 시뮬레이션 – 금상 (2025.09 ~ 2025.10)**](https://github.com/jjong102/Third_Impact)
-  <details>
-  <summary>👉 RoadRunner–Simulink 연동, Pure Pursuit, 차선 변경·복귀 및 속도 제어 로직 직접 구현</summary>
 
-  - **개발 방식:** 팀원 각자가 제어 알고리즘을 구현한 뒤 구현 방식·주행 결과를 공유하며 개선
-  - **직접 구현:**
-    - RoadRunner와 MATLAB/Simulink 연동 환경에서 차량 상태를 제어 로직에 입력하고 조향·속도 명령을 차량 모델에 반영
-    - Pure Pursuit 기반 최근접 경로점·전방 목표점 선택 및 조향값 계산
-    - 조향·주행 조건을 고려한 속도 제어 로직
-    - Ego 차량과 주변 4대의 위치·차선 비교, 동일 차선 차량과 거리 20m 미만 조건에서 목표 차선 전환
-    - 약 2초 판단 간격을 통한 반복 전환 억제와 차선별 참조 경로 선택
-  - **시험 및 한계:**
-    - 차선 변경 5회 중 4회 성공; 복귀 구간 1회에서 과도한 조향(오버슈트) 관찰
-    - 복귀 시 참조 경로 전환·Lookahead 선택·차량 모델 응답을 중심으로 원인을 분석하고 후속 개선 과제 정리
-  - **기술:** MATLAB, Simulink, RoadRunner, Pure Pursuit, Closed-Loop Co-Simulation
-  - **성과:** 팀 경진대회 금상(매스웍스코리아상)
+- 🚙 **MATLAB/Simulink 기반 자율주행·차량 제어 시뮬레이션 – 금상 (2025.09 ~)**  
+  [🏆 경진대회 GitHub](https://github.com/jjong102/Third_Impact) | [💻 개인 시뮬레이션 GitHub](https://github.com/psy1218/autonomous-driving-simulation)
+
+  <details>
+  <summary>👉 RoadRunner–Simulink 연동, Pure Pursuit 경로 추종, 차선 변경·복귀 및 주차·차량 제어 시뮬레이션</summary>
+
+  - **개발 방식:** 경진대회에서 팀원별 제어 알고리즘 구현 및 주행 결과 비교·개선, 이후 개인 차량 시뮬레이션 실습 확장
+
+  - **자율주행 경진대회 구현:**
+    - RoadRunner–MATLAB/Simulink 연동 및 Closed-Loop Co-Simulation 환경 구성
+    - Pure Pursuit 기반 최근접 경로점·Lookahead 목표점 선택 및 조향각 계산
+    - 조향 조건과 주행 상황을 고려한 속도 제어 로직 구현
+    - Ego 차량과 주변 4대의 위치·차선 비교, 동일 차선 차량과 거리 20m 미만 조건에서 차선 변경
+    - 약 2초 판단 간격을 통한 반복 차선 변경 억제 및 차선별 참조 경로 전환
+
+  - **개인 차량 시뮬레이션 구현 및 확장:**
+    - Kinematic Bicycle Model 기반 차량 거동 및 경로 추종 시뮬레이션
+    - 누적 호길이 기반 Lookahead 목표점 선택과 헤딩 오차 기반 조향각 계산
+    - 곡선 참조 경로에 대한 차량 위치·방향 데이터 추출 및 주행 궤적 시각화
+    - RoadRunner–Simulink 연동 결과 확인 및 주행 시나리오 구성
+    - 전진·후진 주차 경로 추종과 기어 전환 제어 실습
+    - MathWorks 예제 기반 차선 검출·차량 검출·전방 센서 융합 및 종·횡방향 제어 구조 분석
+
+  - **시험 및 한계 분석:**
+    - 경진대회 차선 변경 5회 중 4회 성공, 복귀 구간 1회에서 조향 오버슈트 관찰
+    - 참조 경로 전환, Lookahead 설정 및 차량 모델 응답을 중심으로 원인 분석
+    - 차량 상태 및 주행 궤적 시각화를 통한 경로 추종 결과 확인
+
+  - **기술:** MATLAB, Simulink, RoadRunner, Pure Pursuit, Kinematic Bicycle Model, Automated Driving Toolbox, Closed-Loop Co-Simulation
+  - **성과:** 자율주행 시뮬레이션 경진대회 금상(매스웍스코리아상)
 
   </details>
+  
 
 - [🚗 **Is Not Break Down – 페달 오조작 판단 시스템 (2025.07 ~ 2025.09)**](https://github.com/brake-down)
   <details>
