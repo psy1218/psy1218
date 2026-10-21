@@ -178,7 +178,7 @@
 
 
 
-- 🚙 **MATLAB/Simulink 기반 자율주행·차량 제어 시뮬레이션 – 금상 (2025.09 ~)**  
+- 🚙 **MATLAB/Simulink 기반 자율주행·차량 제어 시뮬레이션 – 금상 (2025.08 ~ 2025.10)**  
   [🏆 경진대회 GitHub](https://github.com/jjong102/Third_Impact) | [💻 개인 시뮬레이션 GitHub](https://github.com/psy1218/autonomous-driving-simulation)
 
   <details>
